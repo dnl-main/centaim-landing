@@ -1,4 +1,6 @@
 import "./benefits.css";
+import "./benefitsMq.css"
+
 import Image from "next/image";
 import beneMain from "../../../../../public/_assets/photo/beneMain.png";
 

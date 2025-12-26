@@ -1,4 +1,6 @@
 import "./contact.css";
+import "./contactMq.css";
+
 import { Phone, Mail, User, Smartphone } from "lucide-react";
 
 const Contact = () => {

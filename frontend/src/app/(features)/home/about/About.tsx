@@ -1,4 +1,6 @@
 import "./about.css";
+import "./aboutMq.css"
+
 import Image from "next/image";
 import aboutMain from "../../../../../public/_assets/photo/aboutMain.png";
 

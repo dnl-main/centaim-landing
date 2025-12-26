@@ -1,4 +1,6 @@
 import "./features.css";
+import "./featuresMq.css"
+
 import Image from "next/image";
 import featLeft from "../../../../../public/_assets/photo/featLeft.png";
 import featMid from "../../../../../public/_assets/photo/featMid.png";

@@ -1,5 +1,7 @@
 "use client";
 import "./hero.css";
+import "./heroMq.css"
+
 import React, { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
