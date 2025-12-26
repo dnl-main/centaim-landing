@@ -36,6 +36,8 @@
       justify-content: flex-start;
       align-items: flex-start;
       padding-left: 0;
+      /* animation: fadeInUp 1.5s ease-out forwards;
+      animation-delay: 0.3s; */
     }
 
       .hero-left::before {
@@ -71,6 +73,9 @@
     align-items: center;
     gap: 2vh;
     height: 100%;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
   }
  
     .hero-mid-tagline {
@@ -229,6 +234,8 @@
       justify-content: flex-start;  
       align-items: flex-start;    
       padding-left: 0;
+      /* animation: fadeInUp 1.5s ease-out forwards;
+      animation-delay: 0.3s; */
     }
 
       .hero-right::before {
@@ -259,4 +266,16 @@
           0% { transform: translateY(0); }
           50% { transform: translateY(-3%); }
           100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
