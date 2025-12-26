@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
