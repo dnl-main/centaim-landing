@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { CheckSquare, Users, Box, Circle } from 'lucide-react';
-import featureProperties from './properties/featureProperties'; // adjust path
+import featureProperties from './properties/featureProperties';
 
 import './feature.css';
 import './featureMQ.css';
@@ -69,7 +69,6 @@ const Feature = () => {
               <div
                 key={prop.id}
                 className={`slide ${currentSlide === index ? 'active' : ''}`}
-                style={{ '--bg-color': prop.color } as React.CSSProperties}
               >
                 <div className="carousel-photo">
                   <div className="card-stack">
