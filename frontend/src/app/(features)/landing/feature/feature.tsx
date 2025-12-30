@@ -67,7 +67,7 @@ const Feature = () => {
           <div className="carousel-content">
             {featureProperties.map((prop, index) => (
               <div
-                key={prop.id}
+                key={prop.id} 
                 className={`slide ${currentSlide === index ? 'active' : ''}`}
               >
                 <div className="carousel-photo">
