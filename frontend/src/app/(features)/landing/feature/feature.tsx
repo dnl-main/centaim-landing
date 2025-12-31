@@ -72,20 +72,34 @@ const Feature = () => {
               >
                 <div className="carousel-photo">
                   <div className="card-stack">
-                    {/* Peek card (behind) */}
-                    <div className="card peek" style={{ background: featureProperties[(index + 1) % 4].color }} />
-                    {/* Active card (on top) */}
-                    <div className="card active" style={{background: prop.color }}>
-                      <Image
-                        src={prop.img.src}
-                        alt={prop.img.alt}
-                        fill
-                        style={{ objectFit: 'contain', padding: '20px' }}
-                        priority={index === 0}
-                      />
-                    </div>
+                    {featureProperties.map((card, i) => {
+                      const isActive = i === currentSlide;
+                      const offset = i - currentSlide;
+
+                      return (
+                        <div
+                            key={card.id}
+                            className={`card ${isActive ? 'active' : 'inactive'}`}
+                            style={{
+                              '--card-bg': card.color,
+                              '--offset': offset,
+                              '--z': isActive ? featureProperties.length : featureProperties.length - i,
+                            } as React.CSSProperties}
+                          >
+                            <Image
+                              src={card.img.src}
+                              alt={card.img.alt}
+                              fill
+                              className="card-img"
+                              priority={i === 0}
+                            />
+                          </div>
+
+                      );
+                    })}
                   </div>
                 </div>
+
 
                 <div className="carousel-info">
                   <div className="hook">{prop.hook}</div>

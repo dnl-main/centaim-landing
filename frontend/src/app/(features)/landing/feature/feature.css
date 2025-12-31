@@ -6,7 +6,7 @@
   align-items: center;
   width: 100%;
   /* height: 128.3vh; */
-  min-height: 142.5vh;
+  height: 100vh;
   padding: 2vh;
   /* box-sizing: border-box; */
 
@@ -41,8 +41,8 @@
       align-items: center;
       text-align: center;
       gap: 1vh;
-      padding-top: 6vh;
-      padding-bottom: 6vh;
+      padding-top: 3vh;
+      padding-bottom: 4vh;
     }
     .feature-box-heading-medium {
       font-size: var(--font-size-16);
@@ -392,37 +392,41 @@
 
 .carousel-container {
   position: relative;
-  width: 86%;
-  height: 80vh;
+  width: 90%;
+  height: 90%;
   display: flex;
   background-color: none;
   border-radius: 30px;
   overflow: hidden;
+  padding-bottom: 3vh;
   /* box-shadow: 0 15px 50px rgba(0,0,0,0.15); */
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-nav {
-  width: 120px;
+  width: 10%;
+  height: 100%;
   /* background: white; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 100px 0;
+  align-items: end;
+  gap: 30px;
+  padding: 0px 0;
   position: relative;
   z-index: 10;
 }
 
 .nav-item {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.2rem;
+  font-size: 2.2em;
   font-weight: bold;
   color: white;
   cursor: pointer;
@@ -432,18 +436,25 @@
   overflow: hidden;
   z-index: 10;
 }
+  .nav-item svg {
+    width: 1.3rem;  /* 2 * root font size */
+    height: 1.3rem;
+  }
 
 .nav-item:hover,
 .nav-item.active {
-  transform: translateX(100%) scale(1.15);
+  transform: translateX(50%) scale(1.15);
   /* box-shadow: 0 6px 20px rgba(0,0,0,0.25); */
   z-index: 30;
   opacity: 1;
+  /* transform: translateX(50%); */
 }
 
 .nav-item:not(.active) {
   opacity: 0.6;
-  transform: translateX(0) (0.95);
+  transform: scale(0.95);
+  transform: translateX(0%);
+
 }
 
 .nav-item.active::after,
@@ -463,18 +474,23 @@
 }
 
 .carousel-content {
-  flex: 1;
   position: relative;
-  margin-left: -60px; 
+  display: flex;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide {
   position: absolute;
-  inset: 0;
+  /* inset: 0; */
   display: flex;
   opacity: 0;
   transition: opacity 0.8s ease;
   pointer-events: none;
+  height: 100%;
+  width: 100%;
 }
 
 .slide.active {
@@ -482,6 +498,7 @@
   pointer-events: auto;
   z-index: 1;
 }
+
 
 .carousel-photo {
   flex: 1;
@@ -492,6 +509,7 @@
   background: var(--bg-color);
   border-radius: 40px 0 0 40px;
   padding: 30px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -509,21 +527,49 @@
   border-radius: 28px;
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-  transition: all 0.7s ease;
+  background: var(--card-bg);
+  transform: translate(var(--card-offset-x), var(--card-offset-y)) scale(var(--card-scale)) rotate(var(--card-rotate));
+  opacity: var(--card-opacity);
+  z-index: var(--card-z);
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+  .card {
+  --x: calc(var(--offset) * 20px);
+  --y: calc(var(--offset) * 20px);
+  --scale: calc(0.9 - (0.05 * abs(var(--offset))));
+  --rotate: calc(var(--offset) * 2.5deg);
+
+  transform:
+    translate(var(--x), var(--y))
+    scale(var(--scale))
+    rotate(var(--rotate));
+
+  opacity: calc(0.85 + (0.15 * var(--is-active)));
+}
+
+
+.card-img {
+  object-fit: contain;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .card.active {
-  background: white;
-  z-index: 2;
   transform: scale(1) rotate(0deg) translateY(0);
+  z-index: 999;
+  opacity: 1;
 }
 
 .card.peek {
   background: var(--peek-color);
   z-index: 1;
-  transform: translate(40px, 50px) scale(0.9) rotate(5deg);
+  transform: translate(35px, 40px) scale(0.9) rotate(2.5deg);
   opacity: 0.85;
 }
+
+
 
 .card img {
   width: 100%;
@@ -535,8 +581,7 @@
 
 /* Right info */
 .carousel-info {
-  width: 40%;
-  min-width: 360px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -12,10 +12,14 @@
     padding-left: 2vh;
     padding-right: 2vh;
   }
+
+  .industry-heading-medium {
+    font-size: var(--font-12);
+  }
   
   /* Reduce heading size for mobile */
   .industry-heading-header {
-    font-size: var(--font-size-20);
+    font-size: var(--font-16);
     line-height: 1.3;
   }
 
@@ -32,7 +36,7 @@
     width: 100%;
     gap: 3vh; /* Increased vertical spacing between the stacked blocks */
     /* Remove large horizontal padding */
-    padding: 0vh 2vh; 
+    padding: 0vh 5vh; 
   }
 
   /* Ensure both content sections take up full width */
@@ -48,6 +52,13 @@
   .industry-content-left {
       /* Adjust the fixed height used on desktop, giving it more breathing room if needed */
       height: 65vh; 
+  }
+
+  .industry-content-left-header-medium  {
+    font-size: var(--font-24);
+  }
+  .industry-content-right-header-medium  {
+    font-size: var(--font-24);
   }
   
   /* Reset background gradients for mobile if they are causing performance issues */
@@ -77,6 +88,70 @@
   }
   
   .industry-content-right-cards-card-regular { 
-    font-size: var(--font-size-14); /* Slightly smaller text for cards */
+    font-size: var(--font-14); /* Slightly smaller text for cards */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1275px) {
+
+  /* --- Industry Container --- */
+  .industry {
+    padding: 2vh 0;
+    min-height: auto;
+  }
+
+  .industry-heading {
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+  }
+
+  .industry-heading-medium {
+    font-size: var(--font-14);
+  }
+
+  .industry-heading-header {
+    font-size: var(--font-20);
+    line-height: 1.35;
+  }
+
+  /* --- Content Layout (Tablet Balanced View) --- */
+  .industry-content {
+    flex-direction: row;
+    gap: 4vh;
+    padding: 0 3vh;
+  }
+
+  .industry-content-left,
+  .industry-content-right {
+    width: 100%;
+    height: auto;
+    padding: 4vh;
+    box-shadow: 0 6px 18px rgba(0, 136, 154, 0.08);
+  }
+
+  /* Maintain good proportion for visual-heavy left panel */
+  .industry-content-left {
+    height: 60vh;
+  }
+
+  /* --- Right Panel Cards --- */
+  .industry-content-right-cards {
+    padding: 2vh;
+    gap: 2vh;
+  }
+
+  .industry-content-right-cards-card {
+    padding: 2vh;
+  }
+
+  .industry-content-right-cards-card-icon {
+    padding: 1.5vh;
+  }
+
+  .industry-content-right-cards-card-regular {
+    font-size: var(--font-16);
+    line-height: 1.4;
   }
 }

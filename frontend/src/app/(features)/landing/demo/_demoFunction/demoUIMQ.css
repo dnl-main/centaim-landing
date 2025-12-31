@@ -1,31 +1,32 @@
 @media (max-width: 768px) {
+
   .home-box {
     padding: 1vh;
   }
 
   .home-box-in {
-    padding: 0vh;
-    /* background-color: antiquewhite; */
+    padding: 0;
   }
 
   .home-top {
     padding: 1vh;
-    /* row-gap: 1.5rem; */
-    /* background-color: aqua; */
   }
 
   .home-top-header {
     flex-direction: row;
   }
+
+  .home-top-header-heading p{
+    font-size: var(--font-18);
+  }
+
   .home-top-header-button-text {
     display: none;
   }
 
-  /* turn 3 columns into vertical stack */
-
   .home-top-main {
+    display: flex;
     flex-direction: column;
-    height: auto;
     width: 100%;
     row-gap: 2vh;
   }
@@ -38,12 +39,10 @@
     height: auto;
   }
 
-  /* cards inside components should expand gracefully */
   .home-top-main-left-up,
   .home-top-main-mid-up,
   .home-top-main-left-down,
   .home-top-main-mid-down {
-    height: auto;
     padding: 3vh 4vh;
   }
 
@@ -51,136 +50,172 @@
   .home-top-main-mid-up-header header,
   .home-top-main-left-down-header header,
   .home-top-main-mid-down-header header,
-  .home-top-main-right-header header
-  {
-    font-size: var(--font-size-12);
+  .home-top-main-right-header header {
+    font-size: var(--font-12);
   }
 
-  /* remove fixed max-height so lists don’t get squished */
-  .home-top-main-left-up-job-main {
-    max-height: none;
-  }
+    .home-top-main-left-up-data-all,
+    .home-top-main-mid-up-data,
+    .home-top-main-left-down-data-all,
+    .home-top-main-mid-down-data {
+      font-size: var(--font-size-16);
+    }
 
-
-
+    .home-top-main-mid-down-time-main,
+    .home-top-main-mid-up-time-main {
+      font-size: var(--font-size-10);
+    }
+    .home-top-main-left-up-job-main-card p {  
+          font-size: var(--font-size-8);
+    }  
+    .home-top-main-right-cards-card-down-text p{
+          font-size: var(--font-size-10);
+    }
 
   .home-top-main-left-up-job-main {
     max-height: 16vh;
-    overflow: scroll;
+    overflow-y: auto;
     gap: 1.2vh;
   }
 
-
-
-
-/* 
-  
-  .home-top-main-left-up-header-main header {
-                  font-size: var(--font-size-12);
-  }
-  .home-top-main-left-up-data-all {
-                font-size: var(--font-size-20);
-  }
-  .home-top-main-left-up-data-complete {
-                font-size: var(--font-size-12);
-  }
-  
-  .home-top-main-left-up-job-header {
-                font-size: var(--font-size-10);
-  }
-  .home-top-main-left-up-job-main-card p {  
-                    font-size: var(--font-size-10);
-  }
-
-  .home-top-main-left-down-header-main header {
-                font-size: var(--font-size-10);
-  }
-  .home-top-main-left-down-data-all {
-                font-size: var(--font-size-16);
-  }
-  .home-top-main-left-down-data-complete p {
-                font-size: var(--font-size-10);
-  }
-
-  .home-top-main-mid-up-header-main header {
-                  font-size: var(--font-size-10);
-  }
-  .home-top-main-mid-up-data {
-              font-size: var(--font-size-16);
-  }
-  .home-top-main-mid-up-time-sub {
-                font-size: var(--font-size-10);
-
-  }
-  .home-top-main-mid-up-time-main {
-                font-size: var(--font-size-10);
-  } 
-
-  .home-top-main-mid-down-header-main header {
-                font-size: var(--font-size-10);
-  }
-  .home-top-main-mid-down-data {
-              font-size: var(--font-size-16);
-  }
-  .home-top-main-mid-down-time-sub {
-                font-size: var(--font-size-10);
-
-  }
-  .home-top-main-mid-down-time-main {
-                font-size: var(--font-size-10);
-                
-  }
-
-  .home-top-main-right-header-main header {
-                font-size: var(--font-size-10);
-  }
-  .home-top-main-right-cards-card-up-text-name {
-                    font-size: var(--font-size-10);
-                    
-  }
-  .home-top-main-right-cards-card-up-text-cert {
-                    font-size: var(--font-size-10);
-                    
-  } */
-  .home-top-main-right-cards-card-down-btn {
-                  font-size: var(--font-size-10);
-                  align-self: start;
-  }
-  /* .home-top-main-right-cards-card-down-text-expiry {
-                    font-size: var(--font-size-10);
-  }
-
-  .home-top-main-right-cards-card-down-text-date {
-                    font-size: var(--font-size-10);
-  } */
-
   .home-top-main-right-cards-card-down {
-                flex-direction: column;
+    flex-direction: column;
+  }
+
+  .home-top-main-right-cards-card-down-btn {
+    font-size: var(--font-12);
   }
 
   .modal-content {
-    /* Use a larger portion of the available height for better usability */
     max-height: 90vh;
-    padding: 1.5rem 1rem; /* Slightly more vertical padding */
+    padding: 1.5rem 1rem;
   }
 
-  /* Stack Name and Job Title fields vertically */
   .form-group-holder {
     flex-direction: column;
-    gap: 1rem; /* Increase gap for clarity */
+    gap: 1rem;
   }
 
   .form-group {
-    width: 100%; /* Ensure full width when stacked */
+    width: 100%;
   }
 
-      .confModal-content {
-        padding: 1.5rem;
-        max-width: 95%;
+  .confModal-content {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
+  .confModal-confirmation-message {
+    font-size: var(--font-12);
+  }
+
+  .demo-icons {
+    width: 2.5vh;
+    height: 2.5vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1275px) {
+
+  .home-box {
+    padding: 2vh;
+  }
+
+  .home-top {
+    padding: 2vh;
+  }
+
+  .home-top-main {
+    row-gap: 3vh;
+  }
+
+  .home-top-main-left,
+  .home-top-main-mid,
+  .home-top-main-right {
+    width: 100%;
+  }
+
+  .home-top-main-left-up,
+  .home-top-main-mid-up,
+  .home-top-main-left-down,
+  .home-top-main-mid-down {
+    padding: 3vh 3vh;
+  }
+
+  .home-top-main-left-up-header header,
+  .home-top-main-mid-up-header header,
+  .home-top-main-left-down-header header,
+  .home-top-main-mid-down-header header,
+  .home-top-main-right-header header {
+    font-size: var(--font-12);
+  }
+
+    .home-top-main-left-up-data-all,
+    .home-top-main-mid-up-data,
+    .home-top-main-left-down-data-all,
+    .home-top-main-mid-down-data {
+      font-size: var(--font-size-14);
     }
 
-    .confModal-confirmation-message {
-        font-size: var(--font-size-12);
+    .home-top-main-left-up-data-complete p{
+      font-size: var(--font-size-8);
+    }
+    .home-top-main-mid-down-time-main,
+    .home-top-main-mid-up-time-main {
+      font-size: var(--font-size-8);
+    }
+    .home-top-main-left-up-job-main-card p {  
+      font-size: var(--font-size-8);
+    }  
+    .home-top-main-right-cards-card-down-text p{
+      font-size: var(--font-size-8);
+    }
+    .home-top-main-right-cards-card-up-text p {
+      font-size: var(--font-size-10);
+      text-align: center;
+    }
+    .home-top-main-right-cards-card-down-btn p {
+      font-size: var(--font-size-10);
     }
 
+    .home-top-main-right-cards-card-up{
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .home-top-header-button p{
+      font-size: var(--font-size-12);
+    }
+
+  .home-top-main-left-up-job-main {
+    max-height: 18vh;
+  }
+
+  .home-top-main-right-cards-card-down {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+  }
+    .home-top-main-right-cards-card-down-text p{
+      font-size: var(--font-size-8);
+      text-align: center;
+    }
+    .home-top-main-right-cards-card-down-btn {
+      align-self: center;
+    }
+
+  .modal-content {
+    max-height: 85vh;
+    padding: 2rem;
+  }
+
+  .confModal-content {
+    max-width: 90%;
+  }
+
+  .demo-icons {
+    width: 3vh;
+    height: 3vh;
+  }
 }
