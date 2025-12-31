@@ -223,3 +223,25 @@ background: linear-gradient(
   color: #777;
   line-height: 1.4;
 }
+
+@media (width < 768px) {
+.analytics-card__kpi-item {
+  width: 50%;
+}
+
+.analytics-card__bar-group {
+  height: 85%;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1275px) {
+.analytics-card__kpi-item {
+  width: 50%;
+}
+
+.analytics-card__bar-group {
+  height: 85%;
+}
+}
+

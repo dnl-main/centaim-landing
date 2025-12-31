@@ -2,15 +2,18 @@
   /* --- 1. Industry Container and Heading Adjustments --- */
   .industry {
     /* Relax constraints on mobile */
-    min-height: auto;
     padding: 1vh 0;
+    height: 150vh;
+  }
+
+  .industry-box-in {
+    justify-content: start;
+    align-items: start;
   }
 
   .industry-heading {
-    padding-top: 4vh;
-    padding-bottom: 1vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding: 2vh 2vh 1vh;
+    height: 10%;
   }
 
   .industry-heading-medium {
@@ -36,29 +39,25 @@
     width: 100%;
     gap: 3vh; /* Increased vertical spacing between the stacked blocks */
     /* Remove large horizontal padding */
-    padding: 0vh 5vh; 
+    padding: 0vh 7vh; 
+    height: 100%;
   }
 
   /* Ensure both content sections take up full width */
   .industry-content-left,
-  .industry-content-right { 
+  .industry-content-right {
     width: 100%;
-    height: auto; /* Let the content define the height */
-    padding: 3vh 3vh; /* Adjust internal padding */
-    box-shadow: 0px 4px 15px rgba(0, 136, 154, 0.08); /* Stronger visible shadow on mobile */
+    height: 100%;
+    padding: 3vh 2vh;
+    box-shadow: 0 6px 18px rgba(0, 136, 154, 0.08);
   }
 
   /* Adjust the height of the left box to better fit the AnalyticsCard */
-  .industry-content-left {
-      /* Adjust the fixed height used on desktop, giving it more breathing room if needed */
-      height: 65vh; 
-  }
-
   .industry-content-left-header-medium  {
-    font-size: var(--font-24);
+    font-size: var(--font-18);
   }
   .industry-content-right-header-medium  {
-    font-size: var(--font-24);
+    font-size: var(--font-18);
   }
   
   /* Reset background gradients for mobile if they are causing performance issues */
@@ -88,7 +87,7 @@
   }
   
   .industry-content-right-cards-card-regular { 
-    font-size: var(--font-14); /* Slightly smaller text for cards */
+    font-size: var(--font-10); /* Slightly smaller text for cards */
   }
 }
 
@@ -120,21 +119,24 @@
   .industry-content {
     flex-direction: row;
     gap: 4vh;
-    padding: 0 3vh;
+    padding: 2vh 16vh 0vh;
   }
 
   .industry-content-left,
   .industry-content-right {
     width: 100%;
-    height: auto;
-    padding: 4vh;
+    height: 100%;
+    padding: 3vh 2vh;
     box-shadow: 0 6px 18px rgba(0, 136, 154, 0.08);
   }
-
+    .industry-content-left-header-medium  {
+      font-size: var(--font-16);
+    }
+    .industry-content-right-header-medium  {
+      font-size: var(--font-16);
+    }
+      
   /* Maintain good proportion for visual-heavy left panel */
-  .industry-content-left {
-    height: 60vh;
-  }
 
   /* --- Right Panel Cards --- */
   .industry-content-right-cards {

@@ -75,7 +75,8 @@
       transform: scale(1.15);
       /* box-shadow: 0 6px 20px rgba(0,0,0,0.25); */
       opacity: 1;
-      transform: translateY(50%);
+      transform: translateY(65%);
+      border-bottom-right-radius: 30%;
     }
 
     .nav-item:not(.active) {
@@ -192,18 +193,24 @@
   }
 
   .carousel-nav {
-    gap: 25px;
+    gap: 15px;
     padding: 20px 0;
   }
 
     .nav-item {
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       font-size: 2.2rem;
+      border-radius: 35%;
     }
       .nav-item svg {
         width: 1.1rem;  /* 2 * root font size */
         height: 1.1rem;
+      }
+
+      .nav-item.active {
+        transform: translateX(170%) scale(1.15);
+        border-bottom-right-radius: 30%;
       }
 
   .carousel-content {

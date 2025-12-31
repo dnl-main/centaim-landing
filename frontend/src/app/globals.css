@@ -16,7 +16,7 @@
 
 @media (min-width: 768px) and (max-width: 1300){
   :root {
-    --font-18: clamp(0.68rem, 1.1vw, 0.78rem);
+    --font-8: clamp(0.68rem, 1.1vw, 0.78rem);
     --font-10: clamp(0.70rem, 1.1vw, 0.80rem);
     --font-12: clamp(0.75rem, 1.2vw, 0.85rem);
     --font-14: clamp(0.85rem, 1.3vw, 0.95rem);
