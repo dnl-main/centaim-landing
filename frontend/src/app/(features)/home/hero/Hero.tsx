@@ -111,7 +111,7 @@ const Hero = () => {
                   and growth with
                 </p>
                 <p className="heroHome-box-left-main-sub-second-bold">
-                  Scopos
+                  Centaim
                 </p>
               </div>
             </div>
