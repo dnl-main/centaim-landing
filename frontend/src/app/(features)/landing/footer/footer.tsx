@@ -47,7 +47,9 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-box">
         <div className="footer-left">
-          <div className="left-half-circle-arc"></div>
+          <div className="left-half-circle-arc">
+            <div className="left-half-circle-arc-inner"></div>
+          </div>
         </div>
 
         <div className="footer-middle">
@@ -56,8 +58,8 @@ const Footer = () => {
             <p>Warm Things Up?</p>
           </div>
           <div className="middle-cta-catch">
-            <p>Set up your business system with the precision to hit every goal. Upgrade your company</p>
-            <p>productivity, contact us to discuss and consult your business needs</p>
+            <p>Set up your business system with the precision to hit every goal. Upgrade your company productivity, contact us to discuss and consult your business needs</p>
+            
           </div>
 
           <button onClick={scrollToContact} className="mid-cta-button">
