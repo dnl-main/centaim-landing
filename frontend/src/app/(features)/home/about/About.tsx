@@ -36,7 +36,7 @@ const About = () => {
                 <div className="graph"></div>
                 <div className="statistics-info">
                   <div className="statistics-percentage"><h1>+ 30%</h1></div>
-                  <div className="statistics-category">Opearational Efficiency</div>
+                  <div className="statistics-category">Operational Efficiency</div>
                 </div>
               </div>
             </div>
