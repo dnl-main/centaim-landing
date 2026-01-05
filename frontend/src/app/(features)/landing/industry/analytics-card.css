@@ -227,6 +227,7 @@ background: linear-gradient(
 @media (width < 768px) {
 .analytics-card__kpi-item {
   width: 50%;
+  font-size: var(--font-14);
 }
 
 .analytics-card__bar-group {

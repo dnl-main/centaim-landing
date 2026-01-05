@@ -1,6 +1,7 @@
 'use client';
 
 import './footer.css';
+import './footerMq.css'
 import { useRouter } from 'next/navigation';
 
 const Footer = () => {

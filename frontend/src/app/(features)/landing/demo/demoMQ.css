@@ -116,7 +116,7 @@
 @media (min-width: 768px) and (max-width: 1275px) {
 
   .demo {
-    padding: 2vh;
+    padding: 0vh;
   }
 
   .demo-box {

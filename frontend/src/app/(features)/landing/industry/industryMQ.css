@@ -39,7 +39,7 @@
     width: 100%;
     gap: 3vh; /* Increased vertical spacing between the stacked blocks */
     /* Remove large horizontal padding */
-    padding: 0vh 7vh; 
+    padding: 0vh 3vh; 
     height: 100%;
   }
 
@@ -96,12 +96,16 @@
   /* --- Industry Container --- */
   .industry {
     padding: 2vh 0;
-    min-height: auto;
+    height: 90vh;
+  }
+
+  .industry-box-in {
+    row-gap: 1vh;
   }
 
   .industry-heading {
-    padding-top: 3vh;
-    padding-bottom: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     padding-left: 3vh;
     padding-right: 3vh;
   }
@@ -119,7 +123,7 @@
   .industry-content {
     flex-direction: row;
     gap: 4vh;
-    padding: 2vh 16vh 0vh;
+    padding: 1vh 5vh 0vh;
   }
 
   .industry-content-left,
