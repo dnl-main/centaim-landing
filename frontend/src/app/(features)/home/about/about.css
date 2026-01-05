@@ -25,16 +25,149 @@
 }
 
 .homeabout-ui {
-  /* background-color: lightseagreen; */
+  flex: 1;
   height: 100%;
-  max-width: 50%;
+  display: flex;
+  justify-content: start;
+  gap: 50px;
 }
 
-.homeabout-ui img {
-  /* background-color: green; */
+.homeabout-ui-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.statistic-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.statistic-container-top {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  box-shadow: var(--shadow-primary-lg);
+  opacity: 0.5;
+  align-self: flex-end;
+}
+
+.statistic-container-bottom {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  max-width: 300px;
+  box-shadow: var(--shadow-primary-lg);
+  opacity: 0.5;
+}
+
+.statistic {
+  display: flex;
+  width: 100%;
+  background-color: var(--white-color);
+  padding: 10px 50px 10px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 2vh;
+  gap: 10px;
+  align-items: center;
+}
+
+.graph {
+  width: 5px;
+  height: 90%;
+  background: linear-gradient(to bottom, var(--primary-color), transparent);
+}
+
+.statistics-percentage {
+  color: var(--black-color);
+}
+
+.statistics-category {
+  color: var(--gray-color);
+  font-size: var(--font-size-10);
+  font-weight: var(--font-weight-semibold);
+}
+
+.homeAbout-ui-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #f6f7f9;
+  padding: 10px 90px 10px 10px;
+  border-radius: 10px;
+}
+
+.guide-header p {
+  color: var(--black-color);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-semibold);
+}
+
+.guide-nav-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.nav-white {
+  display: flex;
+  color: var(--gray-color);
+  gap: 15px;
+  font-weight: var(--font-weight-semibold);
+}
+
+.nav-primary {
+  display: flex;
+  color: var(--gray-color);
+  gap: 15px;
+  font-weight: var(--font-weight-semibold);
+}
+
+.icon-container-white {
+  width: 100%;
+  height: auto;
+  background: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: var(--shadow-primary-lg);
+}
+
+.icon-container-primary {
+    width: 100%;
+  height: auto;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: var(--shadow-primary-lg);
+}
+
+.concorde-logo {
+  width: 80%;
+  height: auto;
+}
+
+
+
+/* .homeabout-ui img {
+  background-color: green;
     height: 100%;
   object-fit: contain;
-}
+} */
 
 .homeabout-text {
   /* background-color: mediumaquamarine; */
