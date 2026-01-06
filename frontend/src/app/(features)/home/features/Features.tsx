@@ -21,7 +21,7 @@ const Features = () => {
             <p>Organize your teams and inventory</p>
           </div>
 
-          <div className="homeFeatures-button"></div>
+          {/* <div className="homeFeatures-button"></div> */}
 
           <div className="homeFeatures-ui">
             <div className="features-container-left">

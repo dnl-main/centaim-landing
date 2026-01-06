@@ -56,3 +56,51 @@
     object-fit: contain;
   }
 }
+
+/* ----------------- Home Benefits : Tablet ----------------- */
+@media (min-width: 768px) and (max-width: 1275px) {
+
+  .homeBenefits {
+    height: auto;
+    padding: 3vh 2vh;
+  }
+
+  .homeBenefits-box {
+    padding: 2vh 5vh;
+  }
+
+  .homeBenefits-heading {
+    font-size: var(--font-size-24);
+  }
+
+  .homeBenefits-ui {
+    height: auto;
+    gap: 3vh;
+  }
+
+  .homeBenefits-ui-cards {
+    width: 40%;
+    gap: 2vh;
+  }
+
+  .homeBenefits-ui-cards-card {
+    height: auto;
+    padding: 3vh;
+  }
+
+  .homeBenefits-ui-cards-card-medium {
+    font-size: var(--font-size-14);
+  }
+
+  .homeBenefits-ui-cards-card-light {
+    font-size: var(--font-size-12);
+  }
+
+  .homeBenefits-ui-img {
+    width: 60%;
+  }
+
+  .homeBenefits-ui-img img {
+    width: 105%;
+  }
+}

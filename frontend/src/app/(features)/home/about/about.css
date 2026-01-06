@@ -28,8 +28,9 @@
   flex: 1;
   height: 100%;
   display: flex;
-  justify-content: start;
-  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .homeabout-ui-left {
@@ -37,6 +38,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
+  width: 60%;
 }
 
 .statistic-container {
@@ -94,17 +97,28 @@
 
 .homeAbout-ui-right {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.guide-container {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f7f9;
 }
 
 .guide {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background: #f6f7f9;
-  padding: 10px 90px 10px 10px;
+  padding: 0 3vh;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -122,21 +136,29 @@
 
 .nav-white {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: var(--gray-color);
-  gap: 15px;
+  gap: 10px;
   font-weight: var(--font-weight-semibold);
+  height: 25%;
+  width: 100%;
 }
 
 .nav-primary {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: var(--gray-color);
-  gap: 15px;
+  gap: 10px;
   font-weight: var(--font-weight-semibold);
+  height: 25%;
+  width: 100%;
 }
 
 .icon-container-white {
-  width: 100%;
-  height: auto;
+  width: 50px;
+  height: 45px;
   background: var(--white-color);
   display: flex;
   justify-content: center;
@@ -146,14 +168,20 @@
 }
 
 .icon-container-primary {
-    width: 100%;
-  height: auto;
+  width: 50px;
+  height: 45px;
   background: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   box-shadow: var(--shadow-primary-lg);
+}
+
+.icon-container-white svg,
+.icon-container-primary svg{
+  width: 30px;
+  height: 30px;
 }
 
 .concorde-logo {

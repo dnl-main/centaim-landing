@@ -6,7 +6,7 @@
     max-width: 450px;
     width: 100%;
     height: auto;
-    margin: 0 0 30px 0;
+    margin: 0 0 0px 0;
     box-shadow: var(--shadow-primary-xl);
 }
 
@@ -32,6 +32,7 @@
 .available-header {
     display: flex;
     justify-content: space-between;
+    height: 30px;
 }
 
 .left-header {
@@ -67,6 +68,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    width: 100%;
 }
 
 .job-container {
@@ -81,10 +83,53 @@
 .job-container p {
     font-weight: var(--font-weight-medium);
     white-space: nowrap;
+    font-size: var(--font-size-10);
 }
 
 .bottom-job-container {
     display: flex;
-    gap: 10px;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 6px;
+    width: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 1275px) {
+    .available-inner-container {
+        padding: 10px 15px;
+        gap: 5px;
+    }
+
+    .left-header svg{
+        width: 17px;
+        height: 17px;
+    }
+    .available-header {
+        height: 20px;
+    }
+    .header {
+        font-size: var(--font-12);
+    }
+
+    .count h1 {
+        font-size: var(--font-20);
+    }
+    .complete {
+        line-height: 1.6rem;
+        padding-right: 0px;
+    }
+        .complete p {
+            font-size: var(--font-12);
+        }
+
+    .available-job-title p {
+        font-size: var(--font-12);
+    }
+    .job-container p {
+        font-size: var(--font-12);
+    }
+    .job-container svg {
+        width: 17px;
+        height: 17px;
+    }
+}

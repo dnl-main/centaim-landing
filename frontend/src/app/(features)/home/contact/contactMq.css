@@ -72,3 +72,69 @@
     font-size: 1rem;
   }
 }
+
+
+/* ----------------- Home Contact : Tablet ----------------- */
+@media (min-width: 768px) and (max-width: 1275px) {
+
+  .homeContact {
+    height: auto;
+    padding: 3vh 2vh;
+  }
+
+  .homeContact-box-in {
+    flex-direction: column;
+    padding: 2vh 6vh;
+    gap: 4vh;
+  }
+
+  /* Content Layout */
+  .homeContact-content {
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  /* Left Side (Cards) */
+  .homeContact-content-left {
+    width: 100%;
+    gap: 2vh;
+  }
+
+  .homeContact-content-left-card {
+    padding: 3vh;
+  }
+
+  .homeContact-content-left-card-label {
+    font-size: var(--font-size-11);
+  }
+
+  .homeContact-content-left-card-value {
+    font-size: var(--font-size-18);
+  }
+
+  .homeContact-content-left-card-button {
+    font-size: var(--font-size-14);
+    padding: 1.2vh 0;
+  }
+
+  /* Right Side (Form) */
+  .homeContact-content-right {
+    width: 100%;
+    padding: 4vh;
+  }
+
+  .homeContact-form-row {
+    flex-direction: column;
+  }
+
+  .homeContact-form-input,
+  .homeContact-form-textarea {
+    font-size: var(--font-size-12);
+    padding: 1.8vh 2vh;
+  }
+
+  .homeContact-form-submitBtn {
+    font-size: var(--font-size-14);
+    padding: 1.4vh 0;
+  }
+}

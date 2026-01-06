@@ -78,3 +78,50 @@
     font-size: var(--font-size-13);
     font-weight: var(--font-weight-semibold);
 }
+
+@media (min-width: 768px) and (max-width: 1275px) {
+.notify-date p{
+    font-size: var(--font-10);
+  }
+
+.certificateFeature {
+    width: 85%;
+    height: auto;
+    display: flex;
+}
+.certificate-notify {
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.certificate-expiration {
+    justify-content: center;
+}
+
+.certificateFeature {
+    margin: 0 0 0px;
+  }
+
+.certificate-inner-container {
+    padding: 10px;
+}
+
+.certificate-profile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile-picture svg {
+    width: 30px;
+    height: 30px;
+}
+.notify-button p {
+    font-size: var(--font-10);
+}
+.notify-button svg {
+    width: 17px;
+    height: 17px;
+}
+}

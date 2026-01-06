@@ -55,7 +55,6 @@ const About = () => {
                   <div className="icon-container-white">
                     <IconUserCircle
                       strokeWidth={1}
-                      size={45}
                       color="var(--primary-color)"  
                       fill="var(--white-color)"
                     />
@@ -70,7 +69,6 @@ const About = () => {
                   <div className="icon-container-white">
                     <IconCalendarCheck
                       strokeWidth={1}
-                      size={45}
                       color="var(--primary-color)"  
                       fill="var(--white-color)"
                     />

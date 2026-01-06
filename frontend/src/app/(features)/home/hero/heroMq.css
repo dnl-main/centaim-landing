@@ -114,3 +114,70 @@
     height: 5vh;
   }
 }
+
+/* ----------------- Hero Home : Tablet ----------------- */
+@media (min-width: 768px) and (max-width: 1275px) {
+
+  .heroHome {
+    height: 90vh;
+    padding: 4vh 0;
+  }
+
+  .heroHome-box {
+    padding: 0 6vw;
+    gap: 4vh;
+  }
+
+  .heroHome-box-left {
+    width: 55%;
+    gap: 4vh;
+    padding-left: 0vh;
+  }
+
+  .heroHome-box-right {
+    width: 40%;
+  }
+  .heroHome-box-right-laptop {
+    width: min(55vw, 120vh);
+    left: 30%;
+    top: 50%;
+  }
+
+  .heroHome-box-left-main-header-medium,
+  .heroHome-box-left-main-header-second-medium,
+  .heroHome-box-left-main-header-second-bold {
+    font-size: 2.4rem;
+  }
+
+  .heroHome-box-left-main-sub-regular,
+  .heroHome-box-left-main-sub-second-regular,
+  .heroHome-box-left-main-sub-second-bold {
+    font-size: 1rem;
+  }
+
+  .heroHome-box-left-main-buttons {
+    column-gap: 1.2rem;
+  }
+
+  .heroHome-box-left-main-buttons button {
+    font-size: var(--font-size-14);
+    padding: 1.2vh 2.4vh;
+  }
+
+  .heroHome-box-left-reviews {
+    row-gap: 2vh;
+  }
+
+  .heroHome-box-left-reviews-result-text-semibold {
+    font-size: var(--font-size-16);
+  }
+
+  .heroHome-box-left-reviews-result-text-regular {
+    font-size: var(--font-size-14);
+  }
+
+  .heroHome-box-left-reviews-rating-img-crop {
+    width: 5.5vh;
+    height: 5.5vh;
+  }
+}
