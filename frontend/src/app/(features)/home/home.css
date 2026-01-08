@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .home {
   font-family: var(--font-family);
   scroll-behavior: smooth;

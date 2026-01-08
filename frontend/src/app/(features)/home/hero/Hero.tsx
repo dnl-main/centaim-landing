@@ -139,7 +139,7 @@ const Hero = () => {
               </div> */}
 
               <button 
-                className="hero-mid-buttons-cta heroHome-cta"
+                className="heroHome-box-left-main-buttons-contact"
                 onClick={scrollToContact}
               >
                 <p>Contact Us</p>

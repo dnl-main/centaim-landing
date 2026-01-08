@@ -261,6 +261,21 @@ h1, h2, h3 {
   font-family: "Bricolage Grotesque", serif;
 }
 
+html, 
+body, 
+:root {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Light mode */
 @media (prefers-color-scheme: light) {
   :root {
