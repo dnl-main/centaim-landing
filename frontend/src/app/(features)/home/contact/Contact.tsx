@@ -1,9 +1,21 @@
+"use client";
+
 import "./contact.css";
 import "./contactMq.css";
 
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Phone, Mail, User, Smartphone } from "lucide-react";
 
+
+
 const Contact = () => {
+
+  const [state, handleSubmit] = useForm("mqeargpo");
+  if (state.succeeded) {
+      return <Contact/>; //gawan ng modal
+  }
+
   return (
     <div className="homeContact" id="contact-section">
     <div className="homeContact-box">
@@ -41,12 +53,13 @@ const Contact = () => {
 
         {/* RIGHT CONTACT FORM */}
         <div className="homeContact-content-right">
-          <form className="homeContact-form">
+          <form className="homeContact-form" onSubmit={handleSubmit}>
             {/* Name Input */}
             <div className="homeContact-form-group">
               <User size={20} className="homeContact-form-icon" />
               <input 
                 type="text" 
+                name="name"
                 placeholder="Name" 
                 className="homeContact-form-input homeContact-form-input--single"
               />
@@ -58,6 +71,7 @@ const Contact = () => {
                 <Mail size={20} className="homeContact-form-icon" />
                 <input 
                   type="email" 
+                  name="email"
                   placeholder="Email Address" 
                   className="homeContact-form-input"
                 />
@@ -66,6 +80,7 @@ const Contact = () => {
                 <Smartphone size={20} className="homeContact-form-icon" />
                 <input 
                   type="tel" 
+                  name="phone"
                   placeholder="Phone Number" 
                   className="homeContact-form-input"
                 />
@@ -76,13 +91,14 @@ const Contact = () => {
             <div className="homeContact-form-group homeContact-form-group--textarea">
               <textarea 
                 placeholder="Message Here..." 
+                name="message"
                 className="homeContact-form-textarea"
                 rows={6}
               ></textarea>
             </div>
 
             {/* Submit Button */}
-            <button type="submit" className="homeContact-form-submitBtn">
+            <button type="submit" className="homeContact-form-submitBtn" disabled={state.submitting}>
               Send Message
             </button>
           </form>
