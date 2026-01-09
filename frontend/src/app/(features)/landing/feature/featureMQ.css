@@ -72,10 +72,10 @@
 
     .nav-item:hover,
     .nav-item.active {
-      transform: scale(1.15);
+      transform: scale(1.2);
       /* box-shadow: 0 6px 20px rgba(0,0,0,0.25); */
       opacity: 1;
-      transform: translateY(85%);
+      /* transform: translateY(85%); */
       border-bottom-right-radius: 30%;
     }
 
@@ -86,7 +86,7 @@
 
     .nav-item:not(.active) {
       opacity: 0.6;
-      transform: scale(0.95);
+      /* transform: scale(0.95); */
       transform: translateX(0%);
 
     }
@@ -157,7 +157,7 @@
 }
 
 /* ----------------- Tablet ----------------- */
-@media (min-width: 768px) and (max-width: 1275px) {
+@media (min-width: 768px) and (max-width: 1350px) {
   .card {
     --x: calc(var(--offset) * 23px);
     --y: calc(var(--offset) * 15px);
@@ -226,7 +226,7 @@
     margin-left: 0px;
   } 
     .slide {
-      height: 80%;
+      height: 100%;
       width: 100%;
     }
 
@@ -237,6 +237,10 @@
   .carousel-info {
     width: 45%;
     padding: 30px 20px;
+  }
+
+  .carousel-photo {
+    padding: 10px 30px;
   }
 
   .hook {

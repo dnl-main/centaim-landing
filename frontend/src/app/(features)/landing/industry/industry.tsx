@@ -16,8 +16,7 @@ const Industry = () => {
           <div className="industry-heading">
             <p className="industry-heading-medium">For Growing Companies</p>
             <div className="industry-heading-header">
-              <p className="industry-heading-header-semibold">A smarter way to manage, engage, and optimize</p>
-              <p className="industry-heading-header-semibold">your operations efficiently built for modern business needs.</p>
+              <p className="industry-heading-header-semibold">A smarter way to manage, engage, and optimize your operations efficiently built for modern business needs.</p>
             </div>        
           </div> {/* industry-heading */}
 
@@ -49,7 +48,7 @@ const Industry = () => {
                 <div className="industry-content-right-cards-card">
                   <div className="industry-content-right-cards-card-icon">
                     {/* <p>icon</p> */}
-                    <Gauge size={20} strokeWidth={1.5} aria-label="Inventory" />
+                    <Gauge size={20} strokeWidth={3} aria-label="Inventory" />
                   </div> {/* industry-content-right-cards-card-icon */}
                   <p className="industry-content-right-cards-card-regular">Reduce alloted resources for tedious tasks</p>
                 </div> {/* industry-content-right-cards-card */}
@@ -57,7 +56,7 @@ const Industry = () => {
                 <div className="industry-content-right-cards-card">
                   <div className="industry-content-right-cards-card-icon">
                     {/* <p>icon</p> */}
-                    <Zap size={20} strokeWidth={1.5} aria-label="Inventory" />
+                    <Zap size={20} strokeWidth={3} aria-label="Inventory" />
                   </div> {/* industry-content-right-cards-card-icon */}
                   <p className="industry-content-right-cards-card-regular">Centralized organization of structured data</p>
                 </div> {/* industry-content-right-cards-card */}
@@ -65,7 +64,7 @@ const Industry = () => {
                 <div className="industry-content-right-cards-card">
                   <div className="industry-content-right-cards-card-icon">
                     {/* <p>icon</p> */}
-                    <SlidersHorizontal size={20} strokeWidth={1.5} aria-label="Inventory" />
+                    <SlidersHorizontal size={20} strokeWidth={3} aria-label="Inventory" />
                   </div> {/* industry-content-right-cards-card-icon */}
                   <p className="industry-content-right-cards-card-regular">Exclusive system for every business needs</p>
                 </div> {/* industry-content-right-cards-card */}

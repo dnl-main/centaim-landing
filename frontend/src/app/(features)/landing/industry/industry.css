@@ -65,6 +65,7 @@
           font-size: var(--font-size-24);
           font-weight: var(--font-weight-medium);
           color: var(--black-color);
+          width: 70%;
 
           color: #14181f;
           background-image: linear-gradient(135deg, #14181f 37%, #00889a 92%);
@@ -224,15 +225,17 @@
               gap: 2vh;
               border-radius: 0.6rem;
               box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.03);
+              transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
             }
               .industry-content-right-cards-card-icon { 
                 /* background-color: moccasin;  */
-                background: linear-gradient(
+                /* background: linear-gradient(
                   180deg,
                   rgba(255, 255, 255, 0.5) 0%,  
                   rgba(245, 246, 250, 0.5) 50%,  
                   rgba(0, 136, 154, 0.03) 100%    
-                );
+                ); */
+                background: #ffffff;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -240,6 +243,7 @@
                 padding: 2vh;
                 border-radius: 0.4rem;
                 color: black;
+                transition: color 0.3s ease, background 0.3s ease;
               }
               .industry-content-right-cards-card-regular { 
                 display: flex;
@@ -250,3 +254,19 @@
                 font-weight: var(--font-weight-regular);
                 color: var(--gray-700);
               }
+
+              .industry-content-right-cards-card:hover {
+                background: var(--primary-color);
+                box-shadow: var(--shadow-primary-xl);
+                transform: scale(1.02);
+              }
+
+              .industry-content-right-cards-card:hover .industry-content-right-cards-card-regular
+               {
+                color: white;
+              }
+
+              .industry-content-right-cards-card:hover .industry-content-right-cards-card-icon {
+                color: var(--primary-color)
+              }
+

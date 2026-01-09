@@ -227,6 +227,12 @@
     /* color: var(--white-color); */
 }
 
+.number::-webkit-inner-spin-button,
+.number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* Specific single-line input styling (Name) */
 .homeContact-form-input--single {
     background-color: var(--white-color);

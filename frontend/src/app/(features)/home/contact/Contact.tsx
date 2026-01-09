@@ -2,19 +2,30 @@
 
 import "./contact.css";
 import "./contactMq.css";
+import ContactModal from "./contactComponent/ContactModal";
 
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import { Phone, Mail, User, Smartphone } from "lucide-react";
 
 
 
-const Contact = () => {
+const Contact: React.FC = () => {
 
   const [state, handleSubmit] = useForm("mqeargpo");
-  if (state.succeeded) {
-      return <Contact/>; //gawan ng modal
-  }
+  const [showModal, setShowModal] = useState(false);
+
+   // Show modal AFTER successful submission
+  useEffect(() => {
+    if (state.succeeded) {
+      setShowModal(true);
+    }
+  }, [state.succeeded]);
+
+  const handleModalClose = () => {
+    setShowModal(false);
+    window.location.reload(); // reload only when OK is clicked
+  };
 
   return (
     <div className="homeContact" id="contact-section">
@@ -36,7 +47,7 @@ const Contact = () => {
               <Phone size={24} className="homeContact-content-left-card-icon" />
             </div>
             <p className="homeContact-content-left-card-label">Call Us Directly At</p>
-            <p className="homeContact-content-left-card-value">470 - 601 - 1911</p>
+            <p className="homeContact-content-left-card-value">+(63)919-493-7885</p>
             <button className="homeContact-content-left-card-button">Contact Us</button>
           </div>
 
@@ -46,7 +57,7 @@ const Contact = () => {
               <Mail size={24} className="homeContact-content-left-card-icon homeContact-content-left-card-icon--grey" />
             </div>
             <p className="homeContact-content-left-card-label">Chat With Our Team</p>
-            <p className="homeContact-content-left-card-value homeContact-content-left-card-value--grey">email@pagedone.com</p>
+            <p className="homeContact-content-left-card-value homeContact-content-left-card-value--grey">contact@centaim.com</p>
             <button className="homeContact-content-left-card-button homeContact-content-left-card-button--grey">Contact Us</button>
           </div>
         </div>
@@ -62,6 +73,7 @@ const Contact = () => {
                 name="name"
                 placeholder="Name" 
                 className="homeContact-form-input homeContact-form-input--single"
+                required
               />
             </div>
 
@@ -74,15 +86,16 @@ const Contact = () => {
                   name="email"
                   placeholder="Email Address" 
                   className="homeContact-form-input"
+                  required
                 />
               </div>
               <div className="homeContact-form-group homeContact-form-group--half">
                 <Smartphone size={20} className="homeContact-form-icon" />
                 <input 
-                  type="tel" 
+                  type="number" 
                   name="phone"
                   placeholder="Phone Number" 
-                  className="homeContact-form-input"
+                  className="homeContact-form-input number"
                 />
               </div>
             </div>
@@ -106,7 +119,12 @@ const Contact = () => {
       </div>
 
     </div>
-    </div>      
+    </div>
+      {/* SUCCESS MODAL */}
+      <ContactModal
+        isOpen={showModal}
+        onClose={handleModalClose}
+      />      
     </div>
   );
 };

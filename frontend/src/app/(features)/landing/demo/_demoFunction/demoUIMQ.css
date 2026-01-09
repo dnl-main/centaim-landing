@@ -51,7 +51,7 @@
   .home-top-main-left-down-header header,
   .home-top-main-mid-down-header header,
   .home-top-main-right-header header {
-    font-size: var(--font-12);
+    font-size: var(--font-14);
   }
 
     .home-top-main-left-up-data-all,
@@ -69,7 +69,7 @@
           font-size: var(--font-size-8);
     }  
     .home-top-main-right-cards-card-down-text p{
-          font-size: var(--font-size-10);
+          font-size: var(--font-size-8);
     }
 
   .home-top-main-left-up-job-main {
@@ -78,8 +78,13 @@
     gap: 1.2vh;
   }
 
+  .home-top-main-right-cards-card-up-text p {
+      font-size: var(--font-size-10);
+      text-align: center;
+    }
+
   .home-top-main-right-cards-card-down {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .home-top-main-right-cards-card-down-btn {
@@ -113,9 +118,13 @@
     width: 2.5vh;
     height: 2.5vh;
   }
+
+  .home-top-main-left-up-data-complete p{
+      font-size: var(--font-size-8);
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1275px) {
+@media (min-width: 768px) and (max-width: 1350px) {
 
   .home-box {
     padding: 2vh;
