@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "Centaim",
     template: "%s | Centaim",
   },
-  description: "Centaim provides a modern dashboard designed to accelerate business growth through data-driven insights.",
+  description: "Either Startup or Scaling Company, System is the most crucial for the most company. This gives the efficieny that boosts the company productivity for both users and clients",
   keywords: [
     "team scheduling software",
     "crew availability monitoring",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Centaim",
+    title: "Centaim | Team Scheduling & Business Management System",
     description: "Modern dashboard for business growth and analytics.",
     url: "https://centaim.com",
     siteName: "Centaim",

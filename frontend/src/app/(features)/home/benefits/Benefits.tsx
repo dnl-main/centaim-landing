@@ -6,7 +6,7 @@ import beneMain from "../../../../../public/_assets/photo/beneMain.png";
 
 const Benefits = () => {
   const schemaData = {
-    "@context": "https://schema.org",
+    "@context": "https://centaim.com",
     "@type": "Service",
     "name": "Centaim Scheduling Service",
     "description": "Effortless team booking and automated reminders.",

@@ -11,12 +11,12 @@ import { IconUserCircle, IconCalendarCheck, IconNotebook, IconBell } from "@tabl
 const About = () => {
   // Schema for Company and Workflow
   const schemaData = {
-    "@context": "https://schema.org",
+    "@context": "https://centaim.com",
     "@graph": [
       {
         "@type": "Organization",
         "name": "Centaim",
-        "logo": "https://yourdomain.com/_assets/logo/centaimLogo.png",
+        "logo": "https://centaim.com/_assets/logo/centaimLogo.png",
         "description": "Centaim helps teams handle scheduling and certification tracking easily through a simple, high-efficiency platform."
       },
       {
