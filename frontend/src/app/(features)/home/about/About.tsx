@@ -3,7 +3,8 @@ import "./aboutMq.css"
 
 import Image from "next/image";
 import aboutMain from "../../../../../public/_assets/photo/aboutMain.png";
-import concorde from "../../../../../public/_assets/images/concorde-image.png"
+import concorde from "../../../../../public/_assets/images/concorde-image.png";
+import centaim from "../../../../../public/_assets/logo/centaimLogo.png"
 
 import { IconUserCircle, IconCalendarCheck, IconNotebook, IconBell } from "@tabler/icons-react";
 
@@ -15,7 +16,7 @@ const About = () => {
       <div className="homeabout-ui">
         <div className="homeabout-ui-left">
           <Image
-            src={concorde}
+            src={centaim}
             alt="concorde logo"
             className="concorde-logo"
           />

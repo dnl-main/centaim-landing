@@ -13,7 +13,7 @@ export default [
         hook: "Center your focus",
         header: "Appointment Scheduler",
         mainInfo: "Effortlessly manage client bookings with a scheduling system that keeps your calendar organized and your operations running smoothly.",
-        color: '#0073af',
+        color: '#00889a',
     },
 
     {
@@ -25,7 +25,7 @@ export default [
         hook: "Spot the tailored people",
         header: "Recruitment Portal",
         mainInfo: "Streamline hiring with a recruitment system that centralizes application, candidate profiles, and evaluation tools.",
-        color: '#008281',
+        color: '#00889a',
     },
 
     {
@@ -38,7 +38,7 @@ export default [
         hook: "Aim the right deliverables",
         header: "Inventory Management",
         mainInfo: "Track stock levels in real time with a smart inventory system that helps maintain accuracy and avoid shortages.",
-        color: '#ffaa00',
+        color: '#00889a',
     },
 
     {
@@ -50,6 +50,6 @@ export default [
         hook: "Centralize the list",
         header: "Task Management",
         mainInfo: "Organize workflows with a task system design to simplify planning, assignment, and progress tracking.",
-        color: '#ec005c',
+        color: '#00889a',
     }
 ]

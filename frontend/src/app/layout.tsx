@@ -1,13 +1,46 @@
 import type { Metadata } from "next";
+import { Inter, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Centaim | Landing",
-  description: "Modern dashboard for business growth",
+// 1. Optimize Fonts (Prevents Layout Shift and improves LCP)
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-bricolage",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: "Centaim",
+    template: "%s | Centaim",
+  },
+  description: "Centaim provides a modern dashboard designed to accelerate business growth through data-driven insights.",
+  metadataBase: new URL("https://centaim.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Centaim",
+    description: "Modern dashboard for business growth and analytics.",
+    url: "https://centaim.com",
+    siteName: "Centaim",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Centaim",
+    description: "Modern dashboard for business growth",
+  },
   icons: {
-    icon: '/favIcon.ico',
-  }
+    icon: "/favicon.ico", 
+  },
 };
 
 export default function RootLayout({
@@ -17,19 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* Inter font*/}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-        {/* Bricolage Grotesque*/}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="bodyAll">
+      <body className={`${inter.variable} ${bricolage.variable} bodyAll`}>
         {children}
       </body>
     </html>

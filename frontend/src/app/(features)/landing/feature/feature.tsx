@@ -12,7 +12,6 @@ const Feature = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  // Auto-slide
   useEffect(() => {
     if (isPaused) return;
     const interval = setInterval(() => {
@@ -21,7 +20,6 @@ const Feature = () => {
     return () => clearInterval(interval);
   }, [isPaused]);
 
-  // Hover handlers
   const handleMouseEnter = (index: number) => {
     setIsPaused(true);
     setCurrentSlide(index);
@@ -43,27 +41,31 @@ const Feature = () => {
         </div>
 
         <div className="carousel-container">
-          {/* Nav */}
           <div className="carousel-nav">
-            {featureProperties.map((prop, index) => (
-              <div
-                key={prop.id}
-                className={`nav-item ${
-                  index === 0 ? 'appointment' : index === 1 ? 'recruitment' : index === 2 ? 'inventory' : 'task'
-                } ${currentSlide === index ? 'active' : ''}`}
-                style={{backgroundColor: prop.color}}
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
-              >
-                {index === 0 && <CheckSquare size={32} />}
-                {index === 1 && <Users size={32} />}
-                {index === 2 && <Box size={32} />}
-                {index === 3 && <Circle size={32} />}
-              </div>
-            ))}
+            {featureProperties.map((prop, index) => {
+              const isActive = currentSlide === index;
+              return (
+                <div
+                  key={prop.id}
+                  className={`nav-item ${isActive ? 'active' : ''}`}
+                  style={{
+                    /* Nav items are white when inactive, primary color when active */
+                    backgroundColor: isActive ? '#00889a' : '#ffffff',
+                    color: isActive ? '#ffffff' : '#00889a',
+                    border: `1px solid #00889a`
+                  }}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {index === 0 && <CheckSquare size={32} />}
+                  {index === 1 && <Users size={32} />}
+                  {index === 2 && <Box size={32} />}
+                  {index === 3 && <Circle size={32} />}
+                </div>
+              );
+            })}
           </div>
 
-          {/* Slides */}
           <div className="carousel-content">
             {featureProperties.map((prop, index) => (
               <div
@@ -81,9 +83,10 @@ const Feature = () => {
                             key={card.id}
                             className={`card ${isActive ? 'active' : 'inactive'}`}
                             style={{
-                              '--card-bg': card.color,
+                              /* Cards are pure white when inactive, primary teal when active */
+                              '--card-bg': isActive ? '#00889a' : '#ffffff',
                               '--offset': offset,
-                              '--z': isActive ? featureProperties.length : featureProperties.length - i,
+                              '--z': isActive ? 50 : 10 - Math.abs(offset),
                             } as React.CSSProperties}
                           >
                             <Image
@@ -94,12 +97,10 @@ const Feature = () => {
                               priority={i === 0}
                             />
                           </div>
-
                       );
                     })}
                   </div>
                 </div>
-
 
                 <div className="carousel-info">
                   <div className="hook">{prop.hook}</div>
