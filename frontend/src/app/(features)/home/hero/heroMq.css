@@ -7,7 +7,7 @@
 
   /* Main container */
   .heroHome {
-    height: auto;
+    height: 88vh;
     padding: 4vh 0;
   }
 
@@ -59,6 +59,7 @@
   .heroHome-box-left-main-sub-second-regular,
   .heroHome-box-left-main-sub-second-bold {
     font-size: 0.95rem;
+    display: flex;
   }
 
   /* Buttons stack vertically */
@@ -71,7 +72,7 @@
     padding-top: 2vh;
   }
     .heroHome-box-left-main-buttons button{
-        width: 30%;
+        width: 50%;
         font-size: var(--font-size-12);
     }
 

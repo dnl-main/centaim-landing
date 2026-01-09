@@ -9,118 +9,112 @@ import centaim from "../../../../../public/_assets/logo/centaimLogo.png"
 import { IconUserCircle, IconCalendarCheck, IconNotebook, IconBell } from "@tabler/icons-react";
 
 const About = () => {
+  // Schema for Company and Workflow
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Centaim",
+        "logo": "https://yourdomain.com/_assets/logo/centaimLogo.png",
+        "description": "Centaim helps teams handle scheduling and certification tracking easily through a simple, high-efficiency platform."
+      },
+      {
+        "@type": "HowTo",
+        "name": "How Centaim Works",
+        "step": [
+          { "@type": "HowToStep", "text": "User Registration" },
+          { "@type": "HowToStep", "text": "Easy Scheduling" },
+          { "@type": "HowToStep", "text": "Certification Tracking" },
+          { "@type": "HowToStep", "text": "Real-Time Notifications" }
+        ]
+      }
+    ]
+  };
+
   return (
-    <div className="homeabout">
-    <div className="homeabout-box">
-    <div className="homeabout-box-in">
-      <div className="homeabout-ui">
-        <div className="homeabout-ui-left">
-          <Image
-            src={centaim}
-            alt="concorde logo"
-            className="concorde-logo"
-          />
+    <section className="homeabout" id="about-us" aria-labelledby="about-title">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
 
-          <div className="statistic-container">
-            <div className="statistic-container-top">
-              <div className="statistic">
-                <div className="graph"></div>
-                <div className="statistics-info">
-                  <div className="statistics-percentage"><h1>- 40%</h1></div>
-                  <div className="statistics-category">Time Delays</div>
+      <div className="homeabout-box">
+        <div className="homeabout-box-in">
+          <div className="homeabout-ui">
+            <div className="homeabout-ui-left">
+              <Image
+                src={centaim}
+                alt="Centaim Business Logo"
+                className="concorde-logo"
+              />
+
+              <div className="statistic-container">
+                <div className="statistic-container-top">
+                  <article className="statistic">
+                    <div className="graph"></div>
+                    <div className="statistics-info">
+                      <div className="statistics-percentage"><strong>- 40%</strong></div>
+                      <div className="statistics-category">Time Delays</div>
+                    </div>
+                  </article>
+                </div>
+
+                <div className="statistic-container-bottom">
+                  <article className="statistic">
+                    <div className="graph"></div>
+                    <div className="statistics-info">
+                      <div className="statistics-percentage"><strong>+ 30%</strong></div>
+                      <div className="statistics-category">Operational Efficiency</div>
+                    </div>
+                  </article>
                 </div>
               </div>
             </div>
 
-            <div className="statistic-container-bottom">
-              <div className="statistic">
-                <div className="graph"></div>
-                <div className="statistics-info">
-                  <div className="statistics-percentage"><h1>+ 30%</h1></div>
-                  <div className="statistics-category">Operational Efficiency</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            <div className="homeAbout-ui-right">
+              <div className="guide-container">
+                <div className="guide">
+                  <header className="guide-header">
+                    <p>How it works</p>
+                  </header>
 
-        <div className="homeAbout-ui-right">
-          <div className="guide-container">
-            <div className="guide">
-              <div className="guide-header">
-                <p>How it works</p>
-              </div>
+                  <div className="guide-nav-icons">
+                    {/* Simplified steps for accessibility */}
+                    <div className="nav-white">
+                      <div className="icon-container-white"><IconUserCircle strokeWidth={1} color="var(--primary-color)" fill="var(--white-color)"/></div>
+                      <div className="nav-title"><p>User Registration</p></div>
+                    </div>
 
-              <div className="guide-nav-icons">
-                <div className="nav-white">
-                  <div className="icon-container-white">
-                    <IconUserCircle
-                      strokeWidth={1}
-                      color="var(--primary-color)"  
-                      fill="var(--white-color)"
-                    />
-                  </div>
-                  <div className="nav-title">
-                    <p>User</p>
-                    <p>Registration</p>
-                  </div>
-                </div>
+                    <div className="nav-white">
+                      <div className="icon-container-white"><IconCalendarCheck strokeWidth={1} color="var(--primary-color)" fill="var(--white-color)"/></div>
+                      <div className="nav-title"><p>Easy Scheduling</p></div>
+                    </div>
 
-                <div className="nav-white">
-                  <div className="icon-container-white">
-                    <IconCalendarCheck
-                      strokeWidth={1}
-                      color="var(--primary-color)"  
-                      fill="var(--white-color)"
-                    />
-                  </div>
-                  <div className="nav-title">
-                    <p>Easy</p>
-                    <p>Scheduling</p>
-                  </div>
-                </div>
+                    <div className="nav-primary">
+                      <div className="icon-container-primary"><IconNotebook strokeWidth={1} size={45} color="var(--white-color)" fill="var(--primary-color)"/></div>
+                      <div className="nav-title"><p>Certification Tracking</p></div>
+                    </div>
 
-                <div className="nav-primary">
-                  <div className="icon-container-primary">
-                    <IconNotebook
-                      strokeWidth={1}
-                      size={45}
-                      color="var(--white-color)"  
-                      fill="var(--primary-color)"
-                    />
-                  </div>
-                  <div className="nav-title">
-                    <p>Certification</p>
-                    <p>Tracking</p>
-                  </div>
-                </div>
-                <div className="nav-white">
-                  <div className="icon-container-white">
-                    <IconBell
-                      strokeWidth={1}
-                      size={45}
-                      color="var(--primary-color)"  
-                      fill="var(--white-color)"
-                    />
-                  </div>
-                  <div className="nav-title">
-                    <p>Real-Time</p>
-                    <p>Notification</p>
+                    <div className="nav-white">
+                      <div className="icon-container-white"><IconBell strokeWidth={1} size={45} color="var(--primary-color)" fill="var(--white-color)"/></div>
+                      <div className="nav-title"><p>Real-Time Notification</p></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div className="homeabout-text">
+            <h2 id="about-title" className="homeabout-text-semibold">About us</h2>
+            <p className="homeabout-text-regular">
+              Centaim helps teams handle scheduling and certification tracking easily. Our simple platform makes it faster to organize tasks and stay on top of deadlines. We’re here to help your team work better and get more done together.
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="homeabout-text">
-        {/* <p className="homeabout-text-light">a little bit</p> */}
-        <p className="homeabout-text-semibold">About us</p>
-        <p className="homeabout-text-regular">Centaim helps teams handle scheduling and certification tracking easily. Our simple platform makes it faster to organize tasks and stay on top of deadlines. We’re here to help your team work better and get more done together. </p>
-      </div>
-    </div>
-    </div>    
-    </div>
+      </div>    
+    </section>
   );
 };
 

@@ -8,13 +8,28 @@ import Contact from "./contact/Contact";
 
 const Home = () => {
   return (
-    <div className="home">
-      <Hero />
-      <Features />
-      <Benefits />
-      <About />
-      <Contact />
-    </div>
+    <main className="home">
+      <section id="hero">
+        <Hero />
+      </section>
+
+      <section id="features" aria-labelledby="features-title">
+        <Features />
+      </section>
+
+      <section id="benefits" aria-labelledby="benefits-title">
+        <Benefits />
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <About />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+      
+    </main>
   );
 };
 

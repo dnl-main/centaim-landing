@@ -2,159 +2,158 @@
 @media (max-width: 768px) {
 
   .homeFeatures {
-    height: 200vh;
+    height: auto;
+    min-height: 180vh;
     padding: 4vh 2vh;
   }
 
   .homeFeatures-box {
     height: auto;
     padding: 2vh;
-    gap: 3vh;
+    gap: 2vh;
   }
 
-  .homeFeatures-heading {
-    font-size: var(--font-18);
+  .homeFeatures-heading h2 {
+    font-size: var(--font-28);
+    margin: 0;
+    line-height: 1.2;
   }
 
   .homeFeatures-ui {
     flex-direction: column;
     height: auto;
-    gap: 3vh;
+    gap: 2.5vh;
   }
 
+  /* Card Container Resets */
   .features-container-left,
-  .features-container-middle {
+  .features-container-middle,
+  .features-container-right {
     width: 100%;
     flex: none;
-    height: auto;
     padding: 4vh 3vh;
+    gap: 1.2vh; /* Tightens vertical space between h3, catch, and content */
+    height: auto;
+    min-height: 45vh;
   }
-  
 
   .features-container-right {
-    padding: 6vh 3vh;
-    height: 100vh;
+    height: auto;
+    min-height: 55vh;
+    padding-bottom: 2vh;
   }
 
-  .feature-left-header,
-  .feature-header,
-  .feature-right-header {
+  /* Specific Heading and Text Padding Killers */
+  .feature-left-header h3,
+  .feature-header h3,
+  .feature-right-header h3 {
     font-size: var(--font-16);
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.1;
   }
 
-  .feature-left-catch,
-  .feature-middle-catch,
-  .feature-right-catch {
+  .feature-left-catch p,
+  .feature-middle-catch p,
+  .feature-right-catch p {
     font-size: var(--font-12);
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.3;
   }
 
   .feature-left-content,
   .feature-middle-content {
-    font-size: var(--font-14);
-  }
-  .feature-left-content {
     width: 100%;
+    margin-top: 1vh;
   }
-  
 
-  /* Images scale down & stay decorative */
+  /* Images decorative scaling */
   .laptop-image,
   .certificate-image {
-    width: 75%;
+    width: 65%;
     opacity: 0.4;
+    bottom: -2%;
   }
 
   .calendar-image {
-    width: 60%;
+    width: 55%;
     opacity: 0.35;
+    margin-top: 1vh;
+    position: relative;
+    display: block;
   }
 }
 
-
-/* ----------------- Home Features : Tablet ----------------- */
+/* ----------------- Home Features : Tablet (using clamp) ----------------- */
 @media (min-width: 768px) and (max-width: 1350px) {
 
   .homeFeatures {
     padding: 3vh 2vh;
-    height: 90vh;
+    height: 95vh;
   }
 
   .homeFeatures-box {
     padding: 2vh 1vh;
-    gap: 3vh;
-  }
-
-  .homeFeatures-box-in {
-    justify-content: start;
     gap: 4vh;
   }
 
-  .homeFeatures-heading {
-    font-size: var(--font-24);
+  .homeFeatures-heading h2 {
+    /* clamp(min, preferred, max) */
+    /* font-size: clamp(20px, 3vw, 28px); */
+    font-size: var(--font-size-28);
+    margin: 0;
   }
 
   .homeFeatures-ui {
-    height: 90%;
-    gap: 2vh;
+    height: 85%;
+    gap: 1.5vh;
   }
 
   .features-container-left {
-    flex: 1.4;
-    padding: 1vh;
+    flex: 1.3;
+    padding: 3vh;
   }
 
   .features-container-middle,
   .features-container-right {
     flex: 1;
-    padding: 2vh 2vh;
+    padding: 3vh 2vh;
   }
 
-  .features-container-right {
-    padding-top: 8vh;
+  /* Responsive headers using clamp */
+  .feature-left-header h3,
+  .feature-header h3,
+  .feature-right-header h3 {
+    font-size: clamp(16px, 2.2vw, 22px);
+    margin: 0;
+    line-height: 1.2;
   }
 
-  .feature-left-header h1,
-  .feature-header h1,
-  .feature-right-header h1 {
-    font-size: var(--font-20);
-  }
-
-  .feature-left-catch,
-  .feature-middle-catch,
-  .feature-right-catch {
-    font-size: var(--font-14);
-  }
-
-  .feature-left-content,
-  .feature-middle-content {
-    font-size: var(--font-14);
+  /* Responsive catch text using clamp */
+  .feature-left-catch p,
+  .feature-middle-catch p,
+  .feature-right-catch p {
+    font-size: clamp(11px, 1.5vw, 14px);
+    margin: 0;
+    line-height: 1.4;
   }
 
   .feature-left-content {
-    width: 90%;
+    width: 100%;
   }
 
   .feature-middle-content {
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 
-  .complete {
-      color: #08b208;
-      font-weight: var(--font-weight-medium);
-      padding-right: 0px;
-      line-height: 3rem;
-  }
-  
   .laptop-image {
-    width: 60%;
-  }
-
-  
-  .certificate-image {
     width: 65%;
   }
-
+  
+  .certificate-image {
+    width: 70%;
+  }
 }

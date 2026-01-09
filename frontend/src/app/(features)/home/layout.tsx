@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import "../../../app/globals.css";
 
 export const metadata: Metadata = {
-  title: "Centaim | Home",
-  description: "Modern dashboard for business growth",
+  description: "Explore the Centaim dashboard features designed for rapid business scaling.",
 };
 
 export default function HomeLayout({

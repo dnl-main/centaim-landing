@@ -21,6 +21,15 @@ export const metadata: Metadata = {
     template: "%s | Centaim",
   },
   description: "Centaim provides a modern dashboard designed to accelerate business growth through data-driven insights.",
+  keywords: [
+    "team scheduling software",
+    "crew availability monitoring",
+    "certification tracking tool",
+    "automated meeting reminders",
+    "business management dashboard",
+    "operational efficiency software",
+    "Centaim"
+  ],
   metadataBase: new URL("https://centaim.com"),
   alternates: {
     canonical: "/",
