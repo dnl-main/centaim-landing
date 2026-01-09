@@ -16,8 +16,7 @@ const Industry = () => {
           <div className="industry-heading">
             <p className="industry-heading-medium">For Growing Companies</p>
             <div className="industry-heading-header">
-              <p className="industry-heading-header-semibold">A smarter way to manage, engage, and optimize</p>
-              <p className="industry-heading-header-semibold">your operations efficiently built for modern business needs.</p>
+              <p className="industry-heading-header-semibold">A smarter way to manage, engage, and optimize your operations efficiently built for modern business needs.</p>
             </div>        
           </div> {/* industry-heading */}
 
