@@ -114,6 +114,10 @@
     width: 5vh;
     height: 5vh;
   }
+
+  .heroHome-box-left-main-buttons-contact {
+    padding: 1.6vh 4vh;
+  }
 }
 
 /* ----------------- Hero Home : Tablet ----------------- */

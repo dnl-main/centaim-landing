@@ -293,3 +293,8 @@
 .homeContact-form-submitBtn:hover {
     background-color: var(--primary-color-opacity-75);
 }
+
+.sr-only {
+  color: var(--gray-color);
+  font-weight: var(--font-weight-semibold);
+}

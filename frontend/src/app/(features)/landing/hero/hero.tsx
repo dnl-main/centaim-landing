@@ -6,6 +6,8 @@ import Image from "next/image";
 import heroLeft from "../../../../../public/_assets/overlay/hero-left.png";
 import heroRight from "../../../../../public/_assets/overlay/hero-right.png";
 import scoposLogo from "../../../../../public/_assets/logo/scopos-logo.webp";
+import centaimLogo from "../../../../../public/_assets/logo/centaimLogo.png";
+
 
 const Hero = () => {
   return (
@@ -27,7 +29,7 @@ const Hero = () => {
               <div className="hero-mid-tagline-logo">
                 <div className="hero-mid-tagline-logo-img">
                   <Image
-                    src={scoposLogo}
+                    src={centaimLogo}
                     alt="Logo image of Centaim"
                   />
                 </div>
@@ -55,7 +57,7 @@ const Hero = () => {
               </button>  */}
               
               <Link href="/home" className="hero-mid-buttons-cta">
-                <p>Get started</p>
+                <p>Get Started</p>
               </Link> {/* hero-mid-buttons-cta */}
 
               {/* <button className="hero-mid-buttons-alt">
