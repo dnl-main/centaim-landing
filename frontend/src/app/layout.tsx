@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Centaim | Landing",
   description: "Modern dashboard for business growth",
+
+  icons: {
+    icon: '/favIcon.ico',
+  }
 };
 
 export default function RootLayout({
