@@ -94,7 +94,7 @@
     width: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 1275px) {
+@media (min-width: 768px) and (max-width: 1350px) {
     .available-inner-container {
         padding: 10px 15px;
         gap: 5px;
