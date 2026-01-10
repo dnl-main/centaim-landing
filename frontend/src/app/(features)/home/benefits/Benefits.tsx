@@ -5,28 +5,8 @@ import Image from "next/image";
 import beneMain from "../../../../../public/_assets/photo/beneMain.png";
 
 const Benefits = () => {
-  const schemaData = {
-    "@context": "https://centaim.com",
-    "@type": "Service",
-    "name": "Centaim Scheduling Service",
-    "description": "Effortless team booking and automated reminders.",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Core Benefits",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One-click Meeting Booking" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automated Reminders" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Quick Rescheduling" } }
-      ]
-    }
-  };
-
   return (
     <section className="homeBenefits" id="benefits" aria-labelledby="benefits-title">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
       <div className="homeBenefits-box">
         <div className="homeBenefits-box-in">
           <header className="homeBenefits-heading">
