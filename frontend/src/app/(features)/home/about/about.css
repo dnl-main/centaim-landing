@@ -156,6 +156,10 @@
   width: 100%;
 }
 
+.nav-title {
+  width: 80%;
+}
+
 .icon-container-white {
   width: 50px;
   height: 45px;
@@ -218,6 +222,7 @@
 .homeabout-text-semibold {
   /* background-color: lightcyan; */
   font-size: var(--font-size-28);
+  font-family: var(--font-primary);
   font-weight: var(--font-weight-semibold);
   color: var(--black-color);
 }

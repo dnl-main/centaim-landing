@@ -27,7 +27,7 @@
 }
 
 /* --- Header Section --- */
-.homeContact-header {
+.homeContact-header{
   width: 100%;
   text-align: center;
     /* background-color: yellow; */
@@ -35,6 +35,7 @@
 
 .homeContact-header-title {
   font-size: var(--font-size-28);
+  font-family: var(--font-primary);
   font-weight: var(--font-weight-semibold);
   color: var(--black-color);
 }
@@ -53,12 +54,12 @@
     height: 100%;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .homeContact-content {
         flex-direction: column;
         align-items: center;
     }
-}
+} */
 
 /* --- Left Side (Contact Cards) --- */
 .homeContact-content-left {

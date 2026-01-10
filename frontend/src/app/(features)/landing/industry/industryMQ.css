@@ -13,8 +13,11 @@
 
   .industry-heading {
     padding: 2vh 2vh 1vh;
-    height: 10%;
+    height: 15%;
   }
+    /* .industry-heading-header-semibold {
+      text-align: justify;
+    } */
 
   .industry-heading-medium {
     font-size: var(--font-12);
@@ -25,7 +28,7 @@
     font-size: var(--font-14);
     line-height: 1.3;
     text-wrap: calc();
-    width: 100%;
+    width: 70%;
   }
 
   /* 🛑 FIX: Hide the hard line break on mobile screens if you use one in the HTML
@@ -93,7 +96,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1350px) {
+@media (min-width: 769px) and (max-width: 1350px) {
 
   /* --- Industry Container --- */
   .industry {
