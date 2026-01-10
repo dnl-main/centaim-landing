@@ -1,0 +1,112 @@
+/* ==========================================================================
+   1. MAIN LAYOUT SYSTEM
+   Designed to work as a nested component within a parent container.
+   ========================================================================== */
+
+.blog {
+  display: flex;
+  width: 100%;
+  height: 100%; /* Fill the parent container */
+  min-height: 600px; 
+  overflow: hidden; 
+  background-color: var(--secondary-color);
+}
+
+.blog-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  height: 100%;
+  overflow: hidden;
+}
+
+.blog-main-content {
+  display: flex;
+  flex: 1; 
+  overflow: hidden; 
+}
+
+/* Left Content Area (Where Bento Index & Articles Live) */
+.blog-main-content-left {
+  flex: 0 0 75%; 
+  height: 100%;
+  overflow-y: auto; 
+  padding: 2.5rem;
+  background-color: var(--white-color);
+  scrollbar-gutter: stable; 
+}
+
+/* Right Sidebar Area (Social & Related) */
+.blog-main-content-right {
+  flex: 0 0 25%;
+  height: 100%;
+  display: flex;         
+  flex-direction: column; 
+  overflow: hidden;      
+  /* padding: 1.5rem; */
+  background-color: var(--secondary-color);
+  border-left: 1px solid var(--gray-100);
+}
+
+/* Custom Scrollbar */
+.blog-main-content-left::-webkit-scrollbar {
+  width: 6px;
+}
+.blog-main-content-left::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: 10px;
+}
+
+
+/* ==========================================================================
+   3. MDX CONTENT STYLES
+   Ensures consistent vertical rhythm for blog articles.
+   ========================================================================== */
+
+.mdx-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 760px; /* Optimal reading width */
+  margin: 0 auto;
+}
+
+.mdx-h1, .mdx-h2, .mdx-h3 {
+  color: #111827;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.mdx-h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem !important;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 0.5rem;
+}
+
+.mdx-p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.mdx-quote {
+  border-left: 4px solid #0070f3;
+  padding-left: 1.5rem;
+  font-style: italic;
+  color: #4b5563;
+  margin: 1.5rem 0;
+  background: #f9faff;
+  padding: 1rem 1.5rem;
+  border-radius: 0 12px 12px 0;
+}
+
+.mdx-code {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #f3f4f6;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+  color: #d12727;
+}
+
