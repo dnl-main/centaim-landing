@@ -128,14 +128,14 @@
   }
 
   .homeabout-text-regular {
-    font-size: var(--font-14);
+    font-size: var(--font-20);
     line-height: 1.6;
   }
 }
 
 
 /* ----------------- Home About : Tablet ----------------- */
-@media (min-width: 769px) and (max-width: 1350px) {
+@media (min-width: 768px) and (max-width: 1350px) {
 
   .homeabout {
     height: 80vh;

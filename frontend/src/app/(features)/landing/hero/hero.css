@@ -106,7 +106,7 @@
       }
 
         .hero-mid-tagline-logo p {
-          font-family: var(--font-family);
+          font-family: var(--font-accent);
           font-size: var(--font-size-20);
           font-weight: var(--font-weight-medium);
           color: var(--primary-color);
@@ -144,6 +144,7 @@
 
   font-size: var(--font-size-48);
   font-weight: var(--font-weight-semibold);
+  font-family: var(--font-accent);
   color: #14181f;
   background-image: linear-gradient(135deg, #14181f 37%, #00889a 82%);
   background-clip: text;

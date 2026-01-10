@@ -16,7 +16,7 @@
   }
 
   .homeContact-header-text {
-    font-size: 1rem;
+    font-size: var(--font-20);
   }
 
   /* Content layout stacks vertically */
@@ -36,11 +36,12 @@
 
   .homeContact-content-left-card {
     padding: 3vh 2.5vh;
+    gap: 2vh;
   }
 
   /* Card text scaling */
   .homeContact-content-left-card-label {
-    font-size: 0.85rem;
+    font-size: var(--font-20);
   }
 
   .homeContact-content-left-card-value {
@@ -75,7 +76,7 @@
 
 
 /* ----------------- Home Contact : Tablet ----------------- */
-@media (min-width: 769px) and (max-width: 1350px) {
+@media (min-width: 768px) and (max-width: 1350px) {
 
   .homeContact {
     height: auto;

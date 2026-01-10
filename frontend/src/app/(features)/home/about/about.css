@@ -231,7 +231,7 @@
   /* background-color: lavender;  */
   font-size: var(--font-size-16);
   font-weight: var(--font-weight-light);
-  color: var(--black-color);
+  color: var(--gray-color);
   line-height: 1.8;
   /* padding-top: 2vh; */
 }

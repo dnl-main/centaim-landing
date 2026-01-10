@@ -8,6 +8,7 @@ import { Metadata } from "next";
 
 // Import Client Component for the button
 import ScrollButton from "./_components/ScrollButton";
+import centaimLogo from "../../../../../public/_assets/logo/centaimLogo.png";
 
 // Assets
 import landingLaptop from "../../../../../public/_assets/overlay/landingLaptop.png";
@@ -42,6 +43,12 @@ const Hero = () => {
       <div className="heroHome-box">
         <div className="heroHome-box-left">
           <header className="heroHome-box-left-logo">
+            <div className="hero-mid-tagline-logo-img">
+              <Image
+                src={centaimLogo}
+                alt="Logo image of Centaim"
+              />
+            </div>
             <Link href="/landing" className="Centaim-Logo">
               <span>Centaim</span>
             </Link>

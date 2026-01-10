@@ -37,11 +37,11 @@
   }
 
   .homeBenefits-ui-cards-card-medium {
-    font-size: 1rem;
+    font-size: var(--font-20);
   }
 
   .homeBenefits-ui-cards-card-light {
-    font-size: 0.9rem;
+    font-size: var(--font-16);
   }
 
   /* Image scales naturally */
@@ -58,7 +58,7 @@
 }
 
 /* ----------------- Home Benefits : Tablet ----------------- */
-@media (min-width: 769px) and (max-width: 1350px) {
+@media (min-width: 768px) and (max-width: 1350px) {
 
   .homeBenefits {
     height: auto;
