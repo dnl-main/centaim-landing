@@ -44,7 +44,7 @@
   }
 
   .statistics-category {
-    font-size: var(--font-size-11);
+    font-size: var(--font-12);
   }
 
   /* ---------- UI RIGHT (guide) ---------- */
@@ -65,7 +65,7 @@
   }
 
   .guide-header p {
-    font-size: var(--font-size-14);
+    font-size: var(--font-14);
     text-align: center;
   }
 
@@ -81,7 +81,7 @@
   .icon-container-white,
   .icon-container-primary {
     width: 30px;
-    height: 30px;
+    height: 100%;
     padding: 2px;
   }
 
@@ -115,23 +115,27 @@
     text-align: center;
   }
 
+  .homeabout-text h2{
+    font-size: var(--font-24);
+  }
+
   .homeabout-text-light {
-    font-size: var(--font-size-14);
+    font-size: var(--font-14);
   }
 
   .homeabout-text-semibold {
-    font-size: var(--font-size-22);
+    font-size: var(--font-22);
   }
 
   .homeabout-text-regular {
-    font-size: var(--font-size-14);
+    font-size: var(--font-14);
     line-height: 1.6;
   }
 }
 
 
 /* ----------------- Home About : Tablet ----------------- */
-@media (min-width: 768px) and (max-width: 1350px) {
+@media (min-width: 769px) and (max-width: 1350px) {
 
   .homeabout {
     height: 80vh;
@@ -209,15 +213,15 @@
 
   /* ---------- TEXT ---------- */
   .homeabout-text-light {
-    font-size: var(--font-size-15);
+    font-size: var(--font-16);
   }
 
   .homeabout-text-semibold {
-    font-size: var(--font-size-24);
+    font-size: var(--font-32);
   }
 
   .homeabout-text-regular {
-    font-size: var(--font-size-15);
+    font-size: var(--font-15);
     line-height: 1.7;
   }
 }
