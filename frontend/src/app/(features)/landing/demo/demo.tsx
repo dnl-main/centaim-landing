@@ -7,7 +7,6 @@ import DemoFunction from "./_demoFunction/demoFunction";
 
 
 const Demo = () => {
-
 return (
     <div className="demo">
       <div className="demo-box">   

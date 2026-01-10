@@ -21,25 +21,8 @@ export const metadata: Metadata = {
 };
 
 const Hero = () => {
-  // 2. JSON-LD Structured Data for Google Rich Results
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Centaim",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "120" }
-  };
-
   return (
     <section className="heroHome">
-      {/* Inject JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
       <div className="heroHome-box">
         <div className="heroHome-box-left">
           <header className="heroHome-box-left-logo">

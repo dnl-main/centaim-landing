@@ -2,15 +2,17 @@ import "./hero.css";
 import "./heroMQ.css";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
 
 import heroLeft from "../../../../../public/_assets/overlay/hero-left.png";
 import heroRight from "../../../../../public/_assets/overlay/hero-right.png";
-import scoposLogo from "../../../../../public/_assets/logo/scopos-logo.webp";
 import centaimLogo from "../../../../../public/_assets/logo/centaimLogo.png";
 
 
 const Hero = () => {
+  
   return (
+    <>
     <div className="hero">
       <div className="hero-box">
         {/* <Nav /> */}
@@ -78,6 +80,7 @@ const Hero = () => {
       </div> {/* hero-box */}
 
     </div>
+    </>
   );
 };
 
