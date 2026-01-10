@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "Centaim",
     images: [
       {
-        url: "/_assets/logo/centaimLogo.png",
+        url: "/_assets/logo/centaim_thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Centaim Thumbnail"
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Work is efficient with a clear system | Centaim",
     description: "Scale your business with the most advanced analytics dashboard. Centaim helps you track, manage, and grow your revenue in real-time.",
-    images: ["/_assets/logo/centaimLogo.png"],
+    images: ["/_assets/logo/centaim_thumbnail.png"],
   },
 };
 

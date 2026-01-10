@@ -784,11 +784,15 @@
   font-size: var(--font-size-16);
   cursor: pointer;
   margin-top: 1rem;
+  border: 2px solid var(--white-color);
   transition: background-color 0.2s ease, opacity 0.2s ease, transform 0.1s ease;
 }
 
 .book-btn:hover {
   background-color: var(--primary-color-active);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  /* box-shadow: var(--shadow-primary-xl); */
   opacity: 0.95;
 }
 

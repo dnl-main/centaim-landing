@@ -118,6 +118,7 @@
   /* font-family: var(--font-accent); */
   font-size: var(--font-size-20);
   font-weight: var(--font-weight-semibold);
+  color: var(--white-color);
 }
 
 .homeContact-content-left-card-value--grey {
