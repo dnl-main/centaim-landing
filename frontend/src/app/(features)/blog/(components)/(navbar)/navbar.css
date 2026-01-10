@@ -1,0 +1,124 @@
+/* navbar.css */
+
+.navbarBlog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 8vh;
+  min-height: 64px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px); /* Next.js style glassmorphism */
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  min-width: 180px; /* Prevents layout shift when button disappears */
+}
+
+.back-home-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #111; /* Darker text for better readability */
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: opacity 0.2s ease;
+}
+
+.back-home-btn:hover {
+  opacity: 0.7;
+}
+
+.back-arrow {
+  color: #0070f3; /* Accent blue for the arrow */
+  font-size: 1.1rem;
+}
+
+.nav-search {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* --- Search Component Styles --- */
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 0.9rem;
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0070f3;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(0, 112, 243, 0.1);
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  list-style: none;
+  padding: 0.5rem 0;
+  overflow: hidden;
+}
+
+.search-results li a {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1.25rem;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.search-results li a:hover {
+  background: #f8f9fa;
+}
+
+.result-topic {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: #0070f3; /* Topic stands out in blue */
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.result-title {
+  font-size: 0.9rem;
+  color: #111827;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.search-no-results {
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-align: center;
+}

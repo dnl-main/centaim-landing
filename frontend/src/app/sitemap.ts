@@ -1,14 +1,16 @@
 import { MetadataRoute } from 'next'
-// Corrected the import name to match your file
-import { blogPosts } from './(features)/home/blog/blogData'
+import { getAllPosts } from '@/lib/blog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://centaim.com'
+  
+  // Get all posts from the MDX content folder
+  const posts = getAllPosts()
 
-  // Convert the blogPosts object into an array of sitemap URLs
-  const dynamicBlogPosts = Object.keys(blogPosts).map((id) => ({
-    url: `${baseUrl}/home/blog/${id}`,
-    lastModified: new Date(),
+  // Map them to the correct URL structure
+  const dynamicBlogPosts = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(), // Ideally, use post.frontmatter.date if it's a valid Date object
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
@@ -27,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/home/blog`,
+      url: `${baseUrl}/blog`, 
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,

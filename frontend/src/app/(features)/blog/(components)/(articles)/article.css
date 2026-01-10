@@ -1,0 +1,70 @@
+/* article.css */
+.article-main-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.article-header-section {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 2rem;
+}
+
+/* Add this to your existing article.css */
+
+.article-meta-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: #6b7280; /* Neutral gray */
+}
+
+.meta-dot {
+  color: #d1d5db;
+  font-weight: bold;
+}
+
+.article-author {
+  font-weight: 500;
+  color: #374151; /* Slightly darker for emphasis */
+}
+
+/* Ensure the breadcrumb stays on one line on larger screens */
+.article-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.topic-badge-pill {
+  background-color: #f3f4f6;
+  color: #374151;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.breadcrumb-separator {
+  color: #9ca3af;
+}
+
+.article-date {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.article-display-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #111827;
+  line-height: 1.2;
+}

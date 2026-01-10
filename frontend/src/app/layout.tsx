@@ -18,7 +18,7 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: {
     default: "Centaim",
-    template: "%s | Centaim",
+    template: "Centaim | %s",
   },
   description: "Either Startup or Scaling Company, System is the most crucial for the most company. This gives the efficieny that boosts the company productivity for both users and clients",
   keywords: [

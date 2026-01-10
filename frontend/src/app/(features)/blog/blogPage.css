@@ -1,0 +1,140 @@
+
+/* ==========================================================================
+   2. BENTO UI INDEX DESIGN
+   Optimized for a 75% width container.
+   ========================================================================== */
+
+.blog-index-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bento-grid {
+  display: grid;
+  /* Fluid columns that wrap if the container gets too small */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-rows: minmax(160px, auto);
+  gap: 1.25rem;
+}
+
+.bento-item {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-color: var(--primary-color, #0070f3);
+}
+
+/* Hero Box Layout */
+.hero-box {
+  grid-column: span 3;
+  grid-row: span 2;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+}
+
+.hero-box h1 {
+  font-size: clamp(1.5rem, 3.5vw, 2.75rem); /* Scalable font */
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 1rem 0;
+  line-height: 1.1;
+  color: #111;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #0070f3, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Location & Other Boxes */
+.location-box {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: #111;
+  color: #fff;
+}
+
+.social-box {
+  grid-column: span 2;
+}
+
+.stats-box {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.cta-box {
+  background: #0070f3;
+  color: white;
+}
+
+/* UI Elements */
+.badge {
+  background: #eef5ff;
+  color: #0070f3;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.btn-primary {
+  background: #111;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.social-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.social-link-item {
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #666;
+  transition: background 0.2s;
+}
+
+.social-link-item:hover {
+  background: #f8f8f8;
+  color: #000;
+}
+
+/* Responsive Overrides for the Bento Grid */
+@media (max-width: 1024px) {
+  .hero-box { grid-column: span 4; }
+  .location-box { grid-column: span 2; grid-row: span 1; }
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+}
