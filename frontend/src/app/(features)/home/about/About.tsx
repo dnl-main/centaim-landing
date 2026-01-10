@@ -9,36 +9,9 @@ import centaim from "../../../../../public/_assets/logo/centaimLogo.png"
 import { IconUserCircle, IconCalendarCheck, IconNotebook, IconBell } from "@tabler/icons-react";
 
 const About = () => {
-  // Schema for Company and Workflow
-  const schemaData = {
-    "@context": "https://centaim.com",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Centaim",
-        "logo": "https://centaim.com/_assets/logo/centaimLogo.png",
-        "description": "Centaim helps teams handle scheduling and certification tracking easily through a simple, high-efficiency platform."
-      },
-      {
-        "@type": "HowTo",
-        "name": "How Centaim Works",
-        "step": [
-          { "@type": "HowToStep", "text": "User Registration" },
-          { "@type": "HowToStep", "text": "Easy Scheduling" },
-          { "@type": "HowToStep", "text": "Certification Tracking" },
-          { "@type": "HowToStep", "text": "Real-Time Notifications" }
-        ]
-      }
-    ]
-  };
 
   return (
     <section className="homeabout" id="about-us" aria-labelledby="about-title">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
-
       <div className="homeabout-box">
         <div className="homeabout-box-in">
           <div className="homeabout-ui">

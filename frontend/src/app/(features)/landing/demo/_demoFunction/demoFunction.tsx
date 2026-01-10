@@ -89,7 +89,7 @@ const DemoUI = () => {
             <header className="home-top-header">
               <div className="home-top-header-heading">
                 {/* <Grid3x3 size="var(--icon-size)" /> */}
-                <Grid3x3 className="global-icons" />
+                <Grid3x3 className="global-icons"  style={{ color: 'black' }}/>
                  {/* <Grid3x3 size={24} /> */}
                 <p>Dashboard</p>
               </div>

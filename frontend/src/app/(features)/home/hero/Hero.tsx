@@ -8,6 +8,7 @@ import { Metadata } from "next";
 
 // Import Client Component for the button
 import ScrollButton from "./_components/ScrollButton";
+import centaimLogo from "../../../../../public/_assets/logo/centaimLogo.png";
 
 // Assets
 import landingLaptop from "../../../../../public/_assets/overlay/landingLaptop.png";
@@ -20,28 +21,17 @@ export const metadata: Metadata = {
 };
 
 const Hero = () => {
-  // 2. JSON-LD Structured Data for Google Rich Results
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Centaim",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "120" }
-  };
-
   return (
     <section className="heroHome">
-      {/* Inject JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
       <div className="heroHome-box">
         <div className="heroHome-box-left">
           <header className="heroHome-box-left-logo">
+            <div className="hero-mid-tagline-logo-img">
+              <Image
+                src={centaimLogo}
+                alt="Logo image of Centaim"
+              />
+            </div>
             <Link href="/landing" className="Centaim-Logo">
               <span>Centaim</span>
             </Link>

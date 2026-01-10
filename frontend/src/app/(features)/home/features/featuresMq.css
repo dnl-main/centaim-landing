@@ -14,7 +14,7 @@
   }
 
   .homeFeatures-heading h2 {
-    font-size: var(--font-28);
+    font-size: var(--font-24);
     margin: 0;
     line-height: 1.2;
   }
@@ -47,7 +47,7 @@
   .feature-left-header h3,
   .feature-header h3,
   .feature-right-header h3 {
-    font-size: var(--font-16);
+    font-size: var(--font-20);
     margin: 0 !important;
     padding: 0 !important;
     line-height: 1.1;
@@ -56,10 +56,10 @@
   .feature-left-catch p,
   .feature-middle-catch p,
   .feature-right-catch p {
-    font-size: var(--font-12);
+    font-size: var(--font-16);
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1.3;
+    line-height: 1.5;
   }
 
   .feature-left-content,
@@ -77,9 +77,10 @@
   }
 
   .calendar-image {
-    width: 55%;
+    width: 100%;
+    height: 50%;
     opacity: 0.35;
-    margin-top: 1vh;
+    margin-top: 0;
     position: relative;
     display: block;
   }
@@ -101,7 +102,7 @@
   .homeFeatures-heading h2 {
     /* clamp(min, preferred, max) */
     /* font-size: clamp(20px, 3vw, 28px); */
-    font-size: var(--font-size-28);
+    font-size: var(--font-32);
     margin: 0;
   }
 

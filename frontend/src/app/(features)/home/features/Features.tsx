@@ -10,27 +10,9 @@ import AvailableCrewMini from "./featureComponent/AvailableCrewMini";
 import CertificateTrackingMini from "./featureComponent/CertificateTrackingMini";
 
 const Features = () => {
-  // JSON-LD for Software Features
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Centaim",
-    "applicationCategory": "BusinessApplication",
-    "featureList": [
-      "Real-time crew availability monitoring",
-      "Centralized certificate tracking and expiration alerts",
-      "Interactive calendar for resource allocation"
-    ],
-    "description": "Streamline team management with real-time monitoring, certificate tracking, and interactive scheduling."
-  };
-
   return (
     <section className="homeFeatures" id="features">
       {/* Search Engine Instruction Block */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
 
       <div className="homeFeatures-box">
         <div className="homeFeatures-box-in">

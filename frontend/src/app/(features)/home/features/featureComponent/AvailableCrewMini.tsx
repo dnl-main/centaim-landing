@@ -11,7 +11,7 @@ const AvailableCrewMini = () => {
                 <div className="available-inner-container">
                     <div className="available-header">
                         <div className="left-header">
-                            <header className="header">Available Crew</header>
+                            <header className="header-crew">Available Crew</header>
                             <IconUsers className="icon" size="20px" strokeWidth={2} color="var(--gray-color)"/>
                         </div>
                         <div className="right-header">

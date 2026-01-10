@@ -1,5 +1,5 @@
 /* ----------------- Mobile ----------------- */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .card {
     --x: calc(var(--offset) * 15px);
     --y: calc(var(--offset) * 10px);
@@ -14,30 +14,32 @@
     opacity: calc(0.85 + (0.15 * var(--is-active)));
 
     box-shadow: 0 15px 10px rgba(0,0,0,0.15);
+    border-radius: 18px;
   }
 
   .feature {
     padding: 0vh;
-    height: 80vh;
+    height: 90vh;
   }
 
   .feature-box {
-    row-gap: 4vh;
+    row-gap: 1vh;
   }
 
   .feature-box-heading {
     padding-top: 4vh;
-    padding-bottom: 0vh;
+    padding-bottom: 2vh;
   }
 
   .feature-box-heading-medium {
-    font-size: var(--font-12);
+    font-size: var(--font-20);
   }
 
   .feature-box-heading-regular {
-    font-size: var(--font-14);
+    font-size: var(--font-24);
     line-height: 1.3;
     padding: 0 2vh;
+    width: 95%;
   }
 
   .feature-box-heading-regular br {
@@ -55,14 +57,14 @@
   .carousel-nav {
     flex-direction: row;
     width: 100%;
-    height: 12%;
+    height: 10%;
     justify-content: center;
     padding: 10px 0 0 0;
   }
 
   .nav-item {
-    width: 35px;  /* 2 * root font size */
-    height: 35px;
+    width: 30px;  /* 2 * root font size */
+    height: 30px;
   }
 
     .nav-item svg {
@@ -127,24 +129,28 @@
     transition: opacity 0.8s ease;
     pointer-events: none;
     height: 100%;
-    width: 70%;
+    width: 95%;
+    gap: 2vh  ;
   }
 
   .carousel-photo {
-    border-radius: 20px;
-    height: 50%;
-    padding: 10px;
+    border-radius: 0px;
+    height: 60%;
+    padding: 5px;
   }
-
+    .card-stack {
+      width: 100%;
+    }
   .carousel-info {
     width: 100%;
-    height: 50%;
+    height: 25%;
     min-width: auto;
     padding: 10px 10px;
   }
 
   .hook {
     font-size: var(--font-12);
+    margin-top: 20px;
   }
 
   .header {
@@ -214,7 +220,7 @@
       }
 
       .nav-item.active {
-        transform: translateX(170%) scale(1.15);
+        transform: scale(1.20);
         border-bottom-right-radius: 35%;
       }
       .nav-item.appointment.active {
@@ -231,7 +237,7 @@
     }
 
     .card img {
-      padding: 0px;
+      padding: 0px 10px;
     }
 
   .carousel-info {

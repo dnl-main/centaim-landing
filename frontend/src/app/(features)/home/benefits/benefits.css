@@ -28,6 +28,7 @@
   margin: 0;
   padding: 0;
   font-size: var(--font-size-28);
+  font-family: var(--font-primary);
   font-weight: var(--font-weight-semibold);
   color: var(--black-color);
   text-align: center;
@@ -73,6 +74,7 @@
   padding: 0;
   font-size: var(--font-size-13);
   font-weight: var(--font-weight-medium);
+  font-family: var(--font-primary);
   color: var(--black-color);
   line-height: 1.3;
 }

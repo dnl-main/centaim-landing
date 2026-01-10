@@ -13,8 +13,8 @@
     gap: 4vh;
   }
 
-  .homeBenefits-heading {
-    font-size: 1.6rem;
+  .homeBenefits-heading h2{
+    font-size: var(--font-24);
     height: auto;
     text-align: center;
   }
@@ -37,11 +37,11 @@
   }
 
   .homeBenefits-ui-cards-card-medium {
-    font-size: 1rem;
+    font-size: var(--font-20);
   }
 
   .homeBenefits-ui-cards-card-light {
-    font-size: 0.9rem;
+    font-size: var(--font-16);
   }
 
   /* Image scales naturally */
@@ -69,8 +69,8 @@
     padding: 2vh 5vh;
   }
 
-  .homeBenefits-heading {
-    font-size: var(--font-size-24);
+  .homeBenefits-heading h2{
+    font-size: var(--font-32);
   }
 
   .homeBenefits-ui {
@@ -89,11 +89,11 @@
   }
 
   .homeBenefits-ui-cards-card-medium {
-    font-size: var(--font-size-14);
+    font-size: var(--font-14);
   }
 
   .homeBenefits-ui-cards-card-light {
-    font-size: var(--font-size-12);
+    font-size: var(--font-12);
   }
 
   .homeBenefits-ui-img {

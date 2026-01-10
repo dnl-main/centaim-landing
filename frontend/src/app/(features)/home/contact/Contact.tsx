@@ -23,26 +23,8 @@ const Contact: React.FC = () => {
     window.location.reload();
   };
 
-  // Schema for Contact Page
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contact Centaim",
-    "description": "Get in touch with Centaim for queries regarding team scheduling and management tools.",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "Centaim",
-      "email": "contact@centaim.com",
-      "telephone": "+63-919-493-7885"
-    }
-  };
-
   return (
     <section className="homeContact" id="contact-section" aria-labelledby="contact-title">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
 
       <div className="homeContact-box">
         <div className="homeContact-box-in">

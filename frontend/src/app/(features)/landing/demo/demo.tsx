@@ -5,8 +5,8 @@ import { IconArrowDown,  IconShield} from "@tabler/icons-react";
 
 import DemoFunction from "./_demoFunction/demoFunction";
 
-const Demo = () => {
 
+const Demo = () => {
 return (
     <div className="demo">
       <div className="demo-box">   
