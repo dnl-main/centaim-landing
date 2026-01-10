@@ -56,7 +56,7 @@ export async function generateMetadata({
   const description = post.frontmatter.description;
 
   return {
-    title: `Centaim | ${title}`, 
+    title: `${title}`, 
     description: description,
     keywords: [
       "Centaim", 
