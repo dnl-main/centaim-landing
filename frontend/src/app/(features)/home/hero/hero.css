@@ -408,9 +408,23 @@
           top: 50%;
           transform: translate(-50%, -50%);
           pointer-events: none; 
+
+          animation: laptopFloat 6s ease-in-out infinite;
         }
 
         .Centaim-Logo {
           text-decoration: none;
           color: var(--primary-color);
+        }
+
+        @keyframes laptopFloat {
+          0% {
+            transform: translate(-50%, -50%) translateY(0) rotate(0);
+          }
+          50% {
+            transform: translate(-50%, -50%) translateY(-5%) rotate(1deg);
+          }
+          100% {
+            transform: translate(-50%, -50%) translateY(0) rotate(0);
+          }
         }
