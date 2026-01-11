@@ -141,6 +141,7 @@
           border: 2px solid var(--primary-color-opacity-15);
         }
 
+
   @keyframes fadeInUp {
     from{
       opacity: 0;

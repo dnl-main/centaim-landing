@@ -11,7 +11,7 @@ import ScrollButton from "./_components/ScrollButton";
 import centaimLogo from "../../../../../public/_assets/logo/centaimLogo.png";
 
 // Assets
-import landingLaptop from "../../../../../public/_assets/overlay/landingLaptop.png";
+import landingLaptop from "../../../../../public/_assets/overlay/homepageLaptop2.png";
 import landingBg from "../../../../../public/_assets/photo/landingBg.png";
 
 // 1. Metadata - Exported directly from the Server Component

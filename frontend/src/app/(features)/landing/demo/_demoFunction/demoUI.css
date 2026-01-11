@@ -743,6 +743,7 @@
   color: var(--black-color);
   transition: border-color 0.2s ease;
   width: 100%;
+  
 }
 
 .form-group input:focus,

@@ -73,6 +73,7 @@ const AppointmentModal = ({ onClose, onBook }: AppointmentModalProps) => {
                 value={job}
                 onChange={(e) => setJob(e.target.value)}
                 required
+                className="select-option"
               >
                 <option value="">Select a job title</option>
                 {jobOptions.map((option) => (

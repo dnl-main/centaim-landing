@@ -3,6 +3,7 @@ import "./benefitsMq.css"
 
 import Image from "next/image";
 import beneMain from "../../../../../public/_assets/photo/beneMain.png";
+import benefitsImage from "../../../../../public/_assets/images/manage.png"
 
 const Benefits = () => {
   return (
@@ -35,7 +36,7 @@ const Benefits = () => {
 
             <div className="homeBenefits-ui-img">
               <Image
-                src={beneMain}
+                src={benefitsImage}
                 alt="Centaim team meeting booking interface dashboard"
                 priority={false}
                 loading="lazy"

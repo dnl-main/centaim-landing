@@ -137,6 +137,7 @@
   font-size: var(--font-size-16);
   font-weight: var(--font-weight-semibold);
   color: var(--white-color);
+  background: var(--primary-color);
   border: none;
   border-radius: 500px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -153,6 +154,10 @@
 
 .homeContact-content-left-card--call .homeContact-content-left-card-button:hover {
     background-color: var(--secondary-color);
+}
+
+.homeContact-content-left-card--chat .homeContact-content-left-card-button:hover {
+  background-color: #40A6B3;
 }
 
 /* Grey Card Button */

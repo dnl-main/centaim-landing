@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
     </a>
     {/* Button triggers the mail client */}
     <button 
-      className="homeContact-content-left-card-button homeContact-content-left-card-button--grey"
+      className="homeContact-content-left-card-button"
       onClick={() => window.location.href = "mailto:contact@centaim.com?subject=Inquiry from Website"}
     >
       Email Us
