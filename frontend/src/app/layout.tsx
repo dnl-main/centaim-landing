@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "Centaim",
     template: "Centaim | %s",
   },
-  description: "Either Startup or Scaling Company, System is the most crucial for the most company. This gives the efficieny that boosts the company productivity for both users and clients",
+  description: "Centaim is a technology and business solution company that aims to deliver an efficient system to startup and scaling companies.",
   keywords: [
     "team scheduling software",
     "crew availability monitoring",
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Centaim | Team Scheduling & Business Management System",
-    description: "Modern dashboard for business growth and analytics.",
+    title: "Centaim | Business and Technology Solutions",
+    description: "Centaim is a technology and business solution company that aims to deliver an efficient system to startup and scaling companies.",
     url: "https://centaim.com",
     siteName: "Centaim",
     locale: "en_US",
@@ -62,12 +62,13 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Centaim",
-    description: "Modern dashboard for business growth",
+    description: "Provides solution to businesses through building a functional and analytical system making the organization productive and efficient.",
   },
   icons: {
-    icon: "/favicon.ico", 
+    icon: "/icon.png", 
   },
 };
+
 
 export default function RootLayout({
   children,
